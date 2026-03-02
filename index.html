@@ -1,0 +1,2904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script>
+        window.addEventListener('error', function (e) {
+            var div = document.createElement('div');
+            div.style.position = 'fixed';
+            div.style.top = '0';
+            div.style.left = '0';
+            div.style.zIndex = '999999';
+            div.style.background = 'red';
+            div.style.color = 'white';
+            div.style.padding = '20px';
+            div.style.fontSize = '24px';
+            div.innerHTML = '<b>JS ERROR:</b> ' + e.message + ' at ' + e.filename + ':' + e.lineno;
+            if (document.body) document.body.appendChild(div);
+        });
+        window.addEventListener('unhandledrejection', function (e) {
+            var div = document.createElement('div');
+            div.style.position = 'fixed';
+            div.style.bottom = '0';
+            div.style.left = '0';
+            div.style.zIndex = '999999';
+            div.style.background = 'orange';
+            div.style.color = 'black';
+            div.style.padding = '20px';
+            div.style.fontSize = '24px';
+            div.innerHTML = '<b>PROMISE ERROR:</b> ' + e.reason;
+            if (document.body) document.body.appendChild(div);
+        });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Waqas AI World | Best AI Tools, News & Tutorials Pakistan 2025</title>
+
+    <meta name="description"
+        content="Muhammad Waqas AI World — Pakistan's #1 AI platform. Discover 500+ AI tools, latest AI news, tutorials, ChatGPT guides, Gemini reviews, Claude AI analysis and complete beginner to expert AI learning roadmap.">
+    <meta name="keywords"
+        content="AI tools Pakistan, artificial intelligence, machine learning Pakistan, ChatGPT guide, Google Gemini review, Claude AI, Midjourney, AI tutorials Urdu, best AI website Pakistan, Muhammad Waqas, AI news 2025, deep learning, neural networks, AI for beginners Pakistan, free AI tools, AI comparison, waqas AI world">
+    <meta name="author" content="Muhammad Waqas">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="en-US">
+    <meta name="geo.region" content="PK">
+    <meta name="geo.placename" content="Pakistan">
+    <meta name="geo.country" content="Pakistan">
+    <meta name="revisit-after" content="3 days">
+    <meta name="rating" content="General">
+    <meta name="category" content="Technology, Lifestyle, Artificial Intelligence">
+    <meta name="distribution" content="Global">
+    <meta name="coverage" content="Worldwide">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="rating" content="General">
+    <meta name="category" content="Technology, Artificial Intelligence">
+    <link rel="canonical" href="https://muhammadwaqasaiworld.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Muhammad Waqas AI World">
+    <meta property="og:title" content="Muhammad Waqas AI World | Pakistan's #1 AI Platform">
+    <meta property="og:description"
+        content="Discover 500+ AI tools, news, tutorials and complete AI learning roadmap. Pakistan's premier artificial intelligence resource.">
+    <meta property="og:url" content="https://muhammadwaqasaiworld.com">
+    <meta property="og:image" content="https://muhammadwaqasaiworld.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Muhammad Waqas AI World — Your Gateway to AI">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@WaqasAIWorld">
+    <meta name="twitter:creator" content="@WaqasAIWorld">
+    <meta name="twitter:title" content="Muhammad Waqas AI World">
+    <meta name="twitter:description" content="Pakistan's #1 AI tools and news platform. 500+ AI tools reviewed.">
+    <meta name="twitter:image" content="https://muhammadwaqasaiworld.com/og-image.jpg">
+
+    <meta name="theme-color" content="#7C3AED">
+    <meta name="msapplication-TileColor" content="#7C3AED">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Waqas AI World">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Muhammad Waqas AI World",
+      "alternateName": "Waqas AI World",
+      "url": "https://muhammadwaqasaiworld.com",
+      "description": "Pakistan's #1 AI tools, news and tutorials platform",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@type": "Person",
+        "name": "Muhammad Waqas",
+        "email": "mwaqas5491@gmail.com",
+        "nationality": "Pakistani",
+        "jobTitle": "AI Architect & Developer",
+        "url": "https://muhammadwaqasaiworld.com"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://muhammadwaqasaiworld.com/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Muhammad Waqas AI World",
+      "url": "https://muhammadwaqasaiworld.com",
+      "logo": "https://muhammadwaqasaiworld.com/logo.png",
+      "description": "Pakistan's premier AI knowledge platform",
+      "founder": {
+        "@type": "Person",
+        "name": "Muhammad Waqas"
+      },
+      "foundingDate": "2024",
+      "areaServed": "Worldwide",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "mwaqas5491@gmail.com",
+        "telephone": "+923075645444",
+        "availableLanguage": ["English", "Urdu"]
+      },
+      "sameAs": [
+        "https://twitter.com/WaqasAIWorld",
+        "https://linkedin.com/in/muhammad-waqas",
+        "https://github.com/WaqasAIWorld"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is Muhammad Waqas AI World completely free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! All our tool reviews, news articles, and basic tutorials are 100% free to access." } },
+        { "@type": "Question", "name": "How frequently are parameters recalibrated?", "acceptedAnswer": { "@type": "Answer", "text": "We review and update our AI tracking nodes daily. The AI landscape moves fast, and we ensure our telemetry reflects the absolute latest technology." } },
+        { "@type": "Question", "name": "Can logic clusters be processed offline?", "acceptedAnswer": { "@type": "Answer", "text": "Only local architecture solutions like LLaMA models support true offline data. Our platform directs you to the optimal solutions." } },
+        { "@type": "Question", "name": "What AI tools does Muhammad Waqas recommend for beginners?", "acceptedAnswer": { "@type": "Answer", "text": "ChatGPT and Google Gemini are best starting points..." } },
+        { "@type": "Question", "name": "Is this website related to any Pakistani AI initiative?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Waqas AI World is Pakistan's first dedicated..." } },
+        { "@type": "Question", "name": "Can I contribute articles or tool reviews?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! We welcome contributions..." } },
+        { "@type": "Question", "name": "How is this different from other AI websites?", "acceptedAnswer": { "@type": "Answer", "text": "Unlike general tech sites..." } },
+        { "@type": "Question", "name": "What is the future roadmap of this platform?", "acceptedAnswer": { "@type": "Answer", "text": "We plan to launch a full learning management system..." } }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://muhammadwaqasaiworld.com"},
+        {"@type": "ListItem", "position": 2, "name": "AI Tools", "item": "https://muhammadwaqasaiworld.com/#tools"},
+        {"@type": "ListItem", "position": 3, "name": "Contact", "item": "https://muhammadwaqasaiworld.com/#contact-page"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Top AI Tools of 2025",
+      "author": {
+        "@type": "Person",
+        "name": "Muhammad Waqas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Muhammad Waqas AI World"
+      },
+      "datePublished": "2025-01-01",
+      "description": "Complete guide to the best AI tools"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: "#080B16", // Deep space dark
+                        surface: "rgba(255, 255, 255, 0.03)",
+                        primary: "#7C3AED", // Vivid Purple
+                        secondary: "#E11D48", // Vivid Rose
+                        accent: "#06B6D4", // Cyan Glow
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        drama: ['"Cormorant Garamond"', 'serif'],
+                        data: ['"IBM Plex Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --primary: #7C3AED;
+            --secondary: #E11D48;
+            --accent: #06B6D4;
+            --bg: #080B16;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #080B16;
+            color: #FFFFFF;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        /* ----- High-End Aesthetic ----- */
+        .noise-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            pointer-events: none;
+            opacity: 0.04;
+            mix-blend-mode: overlay;
+        }
+
+        .mesh-bg {
+            position: fixed;
+            inset: -50%;
+            z-index: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(circle at 0% 0%, rgba(124, 58, 237, 0.25), transparent 60%),
+                radial-gradient(circle at 100% 0%, rgba(225, 29, 72, 0.2), transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(6, 182, 212, 0.25), transparent 60%),
+                radial-gradient(circle at 0% 100%, rgba(59, 130, 246, 0.2), transparent 50%);
+            filter: blur(100px);
+            animation: mesh-morph 25s infinite alternate ease-in-out;
+        }
+
+        @keyframes mesh-morph {
+            0% {
+                transform: scale(1) rotate(0deg);
+            }
+
+            50% {
+                transform: scale(1.1) rotate(5deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        /* Glassmorphism Classes */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            border-radius: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .glass-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+        }
+
+        .glass-panel-hover:hover {
+            transform: translateY(-6px);
+            border-color: rgba(124, 58, 237, 0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(124, 58, 237, 0.1);
+        }
+
+        /* Typography */
+        .text-gradient {
+            background: linear-gradient(135deg, #A78BFA, #F472B6, #22D3EE);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-glow {
+            text-shadow: 0 0 40px rgba(124, 58, 237, 0.4);
+        }
+
+        /* Magnetic Premium Buttons */
+        .btn-magnetic {
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.5s ease;
+        }
+
+        .btn-magnetic:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(225, 29, 72, 0.6);
+        }
+
+        .btn-magnetic::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #E11D48, #7C3AED);
+            transform: translateY(100%);
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: -1;
+        }
+
+        .btn-magnetic:hover::before {
+            transform: translateY(0);
+        }
+
+        /* Navbar Morphing */
+        #navbar.nav-scrolled {
+            background: rgba(8, 11, 22, 0.85);
+            backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 0;
+            width: 100%;
+            top: 0;
+            padding: 1rem;
+        }
+
+        /* Mobile Menu */
+        #mobile-menu {
+            transform: translateY(-100%);
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        #mobile-menu.active {
+            transform: translateY(0);
+        }
+
+        /* Hiding scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #080B16;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        /* New Features Styling */
+
+        /* Stats */
+        .stat-num {
+            background: linear-gradient(135deg, #A78BFA, #22D3EE);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Ticker */
+        .ticker-wrap {
+            width: 100%;
+            overflow: hidden;
+            background: rgba(124, 58, 237, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 8px 0;
+        }
+
+        .ticker-track {
+            display: flex;
+            animation: ticker 40s linear infinite;
+            width: max-content;
+        }
+
+        .ticker-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes ticker {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Back to top */
+        #back-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 500;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
+        }
+
+        #back-top.visible {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+
+        #back-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(124, 58, 237, 0.6);
+        }
+
+        /* Progress bar */
+        #read-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #7C3AED, #E11D48, #06B6D4);
+            z-index: 9999;
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        /* Loading overlay */
+        #loader {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: #080B16;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1.5rem;
+            transition: opacity 0.8s ease;
+        }
+
+        #loader.fade {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader-ring {
+            width: 80px;
+            height: 80px;
+            border: 4px solid rgba(255, 255, 255, 0.05);
+            border-top-color: #7C3AED;
+            border-right-color: #06B6D4;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Cookie banner */
+        #cookie-banner {
+            position: fixed;
+            bottom: 1rem;
+            left: 1rem;
+            right: 1rem;
+            max-width: 600px;
+            z-index: 900;
+            transform: translateY(150%);
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        #cookie-banner.show {
+            transform: translateY(0);
+        }
+
+        /* Filter buttons */
+        .filter-btn {
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.02);
+            color: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: linear-gradient(135deg, #7C3AED, #E11D48);
+            border-color: transparent;
+            color: white;
+        }
+
+        /* FAQ Accordion */
+        .faq-item {
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            overflow: hidden;
+        }
+
+        .faq-btn {
+            width: 100%;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: left;
+            cursor: pointer;
+            color: white;
+        }
+
+        .faq-content {
+            max-height: 0;
+            padding: 0 1.5rem;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .faq-item.active .faq-content {
+            max-height: 500px;
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        input.error,
+        textarea.error {
+            border-color: #E11D48 !important;
+        }
+
+        /* Custom UI Enhancements */
+        .mw-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7C3AED, #06B6D4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            font-weight: 900;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: white;
+            position: relative;
+        }
+
+        .mw-avatar::after {
+            content: '';
+            position: absolute;
+            inset: -15px;
+            border-radius: 50%;
+            border: 3px dashed rgba(6, 182, 212, 0.5);
+            animation: spin 10s linear infinite;
+        }
+
+        .roadmap-step {
+            position: relative;
+            z-index: 10;
+        }
+
+        .roadmap-line {
+            position: absolute;
+            top: 3.5rem;
+            left: 50%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #7C3AED, rgba(255, 255, 255, 0.1));
+            z-index: 0;
+        }
+
+        @media (max-width: 768px) {
+            .roadmap-line {
+                width: 2px;
+                height: 100%;
+                left: 3rem;
+                top: 50%;
+                background: linear-gradient(180deg, #7C3AED, rgba(255, 255, 255, 0.1));
+            }
+        }
+
+        .ai-tab {
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+            opacity: 0.6;
+        }
+
+        .ai-tab.active {
+            border-bottom-color: #06B6D4;
+            color: white;
+            opacity: 1;
+        }
+
+        .ai-tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .ai-tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #blog-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(8, 11, 22, 0.95);
+            backdrop-filter: blur(20px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            padding: 20px;
+        }
+
+        #blog-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        #blog-modal .modal-content {
+            max-height: 90vh;
+            overflow-y: auto;
+            background: #080B16;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2rem;
+            padding: 2rem;
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+        }
+
+        .typing-cursor {
+            border-right: 2px solid #06B6D4;
+            animation: blink 0.75s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .cmp-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .cmp-table th,
+        .cmp-table td {
+            padding: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .cmp-table th {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(6, 182, 212, 0.1));
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cmp-table tr:hover td {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .nav-link.active-link {
+            color: #06B6D4;
+            position: relative;
+        }
+
+        .nav-link.active-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #06B6D4;
+        }
+
+        .mobile-link.active-link {
+            color: #06B6D4;
+            border-bottom-color: #06B6D4;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f2e30f;
+            animation: confettiDrop 4s ease-in-out forwards;
+            z-index: 1000;
+            top: -100px;
+        }
+
+        @keyframes confettiDrop {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(120vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        .checkmark-svg {
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: drawCheck 1s ease-out forwards;
+        }
+
+        @keyframes drawCheck {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        /* Tooltip */
+        .tool-tooltip {
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-10px);
+            background: #080B16;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            width: max-content;
+            max-width: 250px;
+            z-index: 50;
+        }
+
+        .group:hover .tool-tooltip {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-primary selection:text-white">
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <div class="font-data text-white font-bold tracking-widest text-sm">INITIALIZING CORE...</div>
+    </div>
+
+    <!-- Reading Progress Bar -->
+    <div id="read-progress"></div>
+
+    <!-- Cinematic Overlays -->
+    <svg class="noise-overlay" id="noise-svg">
+        <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+    </svg>
+    <div class="mesh-bg"></div>
+
+    <!-- Back to Top Button -->
+    <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i data-lucide="arrow-up" class="w-6 h-6 text-white"></i>
+    </button>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner">
+        <div class="glass-panel p-3 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <p class="text-sm text-white/70 flex-1">We use cookies to improve your experience. By continuing, you agree
+                to our <a href="#" class="text-accent underline">Privacy Policy</a>.</p>
+            <div class="flex gap-3">
+                <button onclick="acceptCookies()"
+                    class="btn-magnetic bg-white/10 text-white px-6 py-2 rounded-full font-bold text-sm">Accept
+                    All</button>
+                <button onclick="declineCookies()"
+                    class="px-6 py-2 rounded-full font-bold text-sm text-white/50 border border-white/10 hover:text-white hover:bg-white/5 transition">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Floating Island Navbar (Desktop & Mobile) -->
+    <nav id="navbar"
+        class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-[90%] max-w-6xl rounded-[3rem] px-6 md:px-4 py-3 md:py-4 flex items-center justify-between transition-all duration-700 bg-[rgba(255,255,255,0.02)] border border-white/5 backdrop-blur-md text-white shadow-2xl">
+        <a href="#home" class="font-sans font-black text-lg md:text-xl tracking-tight flex items-center gap-2 z-50">
+            <div
+                class="relative flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-primary to-accent shadow-[0_0_15px_rgba(124,58,237,0.5)]">
+                <i data-lucide="brain-circuit" class="w-4 h-4 text-white"></i>
+            </div>
+            Waqas AI World
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="hidden lg:flex items-center gap-6 font-sans font-semibold text-sm">
+            <a href="#home" class="nav-link hover:text-accent transition-colors">Home</a>
+            <a href="#about-me" class="nav-link hover:text-accent transition-colors">About Me</a>
+            <a href="#roadmap" class="nav-link hover:text-accent transition-colors">Roadmap</a>
+            <a href="#about-ai" class="nav-link hover:text-accent transition-colors">About AI</a>
+            <a href="#faq" class="nav-link hover:text-accent transition-colors">FAQ</a>
+            <a href="#tools" class="nav-link hover:text-accent transition-colors">Ecosystem</a>
+            <a href="#news" class="nav-link hover:text-accent transition-colors">Insights</a>
+            <a href="#contact-page" class="nav-link hover:text-accent transition-colors">Contact</a>
+            <button id="search-btn"
+                class="hover:text-accent transition-colors bg-white/5 px-4 py-2 rounded-full border border-white/5 flex items-center gap-2"
+                aria-label="Search"><i data-lucide="search" class="w-4 h-4"></i> Search</button>
+        </div>
+
+        <div class="hidden lg:block">
+            <a href="#contact-page"
+                class="btn-magnetic bg-white/10 text-white px-7 py-3 rounded-full font-sans font-bold text-sm border border-white/10 shadow-[0_0_20px_rgba(124,58,237,0.2)]">
+                <span class="relative z-10 flex items-center gap-2">Initiate Access <i data-lucide="arrow-right"
+                        class="w-4 h-4"></i></span>
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-btn" class="lg:hidden p-2 text-white z-50 bg-white/5 rounded-full border border-white/10">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="fixed inset-0 z-50 hidden bg-[rgba(8,11,22,0.95)] backdrop-blur-xl">
+        <div class="max-w-2xl mx-auto px-6 pt-6">
+            <div class="flex items-center gap-4 mb-4">
+                <div class="flex-1 relative">
+                    <input type="search" id="search-input" placeholder="Search the neural network..."
+                        class="w-full bg-[rgba(255,255,255,0.05)] border border-white/10 rounded-2xl p-2 pl-6 text-white outline-none focus:border-accent"
+                        autocomplete="off" autofocus>
+                    <i data-lucide="search"
+                        class="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-accent pointer-events-none"></i>
+                </div>
+                <button id="search-close" class="text-white/50 hover:text-white px-4 py-2 font-bold">Close</button>
+            </div>
+            <div id="search-results" class="space-y-3"></div>
+        </div>
+    </div>
+
+    <!-- Mobile Fullscreen Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-40 bg-[rgba(8,11,22,0.98)] backdrop-blur-3xl flex flex-col justify-center px-4 lg:hidden">
+        <div class="flex flex-col gap-6 text-3xl font-drama italic text-white/80">
+            <button id="mobile-search-btn"
+                class="text-left mobile-link hover:text-accent transition-colors border-b border-white/10 pb-4 flex items-center gap-3"><i
+                    data-lucide="search" class="w-6 h-6"></i> Search</button>
+            <a href="#home"
+                class="mobile-link hover:text-accent transition-colors border-b border-white/10 pb-4">Home</a>
+            <a href="#about-me"
+                class="mobile-link hover:text-accent transition-colors border-b border-white/10 pb-4">About Me</a>
+            <a href="#roadmap"
+                class="mobile-link hover:text-accent transition-colors border-b border-white/10 pb-4">Roadmap</a>
+            <a href="#about-ai"
+                class="mobile-link hover:text-accent transition-colors border-b border-white/10 pb-4">About AI</a>
+            <a href="#faq" class="mobile-link hover:text-accent transition-colors border-b border-white/10 pb-4">FAQ</a>
+            <a href="#tools"
+                class="mobile-link hover:text-accent transition-colors border-b border-white/10 pb-4">Ecosystem</a>
+            <a href="#news"
+                class="mobile-link hover:text-accent transition-colors border-b border-white/10 pb-4">Insights</a>
+            <a href="#contact-page"
+                class="mobile-link hover:text-accent transition-colors border-b border-white/10 pb-4">Contact</a>
+        </div>
+        <a href="#contact-page"
+            class="mobile-link mt-6 w-full text-center bg-gradient-to-r from-primary to-secondary text-white py-2 rounded-full font-sans font-bold text-lg shadow-[0_0_30px_rgba(225,29,72,0.4)]">
+            Initiate Access Now
+        </a>
+    </div>
+
+    <!-- ===== AI NEWS TICKER ===== -->
+    <div class="relative z-10 w-full ticker-wrap mt-[60px] lg:mt-[70px]">
+        <div class="flex items-center">
+            <div
+                class="shrink-0 px-4 py-1.5 rounded-r-full text-xs font-bold font-data bg-gradient-to-r from-primary to-secondary text-white border border-white/20 mr-4 z-10">
+                LIVE TELEMETRY</div>
+            <div class="overflow-hidden flex-1"
+                style="mask-image:linear-gradient(90deg,transparent,black 5%,black 95%,transparent); -webkit-mask-image:linear-gradient(90deg,transparent,black 5%,black 95%,transparent);">
+                <div class="ticker-track">
+                    <span class="px-4 text-sm text-accent font-data font-semibold">> OpenAI releases parameters updates
+                        [sys.1]</span>
+                    <span class="px-4 text-sm text-secondary font-data font-semibold">> Meta LLaMA logic sync nominal
+                        [sys.2]</span>
+                    <span class="px-4 text-sm text-primary font-data font-semibold">> Claude architecture benchmark:
+                        Passed</span>
+                    <span class="px-4 text-sm text-white/70 font-data font-semibold">> Midjourney nodes online</span>
+                    <span class="px-4 text-sm text-green-400 font-data font-semibold">> Ecosystem growth +420%</span>
+
+                    <span class="px-4 text-sm text-accent font-data font-semibold">> OpenAI releases parameters updates
+                        [sys.1]</span>
+                    <span class="px-4 text-sm text-secondary font-data font-semibold">> Meta LLaMA logic sync nominal
+                        [sys.2]</span>
+                    <span class="px-4 text-sm text-primary font-data font-semibold">> Claude architecture benchmark:
+                        Passed</span>
+                    <span class="px-4 text-sm text-white/70 font-data font-semibold">> Midjourney nodes online</span>
+                    <span class="px-4 text-sm text-green-400 font-data font-semibold">> Ecosystem growth +420%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Opening Shot Hero -->
+    <section id="home" class="relative min-h-[90vh] w-full flex items-center pt-32 pb-24 px-6 z-10">
+        <div class="max-w-4xl mx-auto w-full flex flex-col items-center justify-center text-center gap-4">
+
+            <div class="flex flex-col items-center text-center w-full">
+                <div
+                    class="hero-elem inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] backdrop-blur-md mb-4 shadow-[0_4px_20px_rgba(0,0,0,0.5)]">
+                    <span class="flex h-2 w-2 relative">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                    </span>
+                    <span class="text-xs font-bold tracking-widest font-data uppercase text-white/90">System Online
+                        v4.0</span>
+                </div>
+
+                <h1 class="flex flex-col text-center mb-4">
+                    <span
+                        class="hero-elem font-sans font-black text-5xl md:text-7xl lg:text-8xl tracking-tight text-white leading-none">The
+                        Power of</span>
+                    <span
+                        class="hero-elem font-drama italic text-6xl md:text-8xl lg:text-9xl text-gradient pr-4 py-2 mt-2 leading-none drop-shadow-2xl">Artificial
+                        Intelligence.</span>
+                </h1>
+
+                <p
+                    class="hero-elem font-sans text-white/60 max-w-xl text-lg md:text-xl font-medium leading-relaxed mb-5">
+                    A unified multi-model intelligence platform. We converge ChatGPT, Meta AI, Claude, and DeepSeek into
+                    a singular, high-performance biological rendering engine.
+                </p>
+
+
+                <div class="hero-elem flex items-center justify-center gap-3 mb-3">
+                    <div class="flex -space-x-2">
+                        <div
+                            class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 border-2 border-[#080B16] flex items-center justify-center text-[9px] font-bold text-white">
+                            AK</div>
+                        <div
+                            class="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-400 border-2 border-[#080B16] flex items-center justify-center text-[9px] font-bold text-white">
+                            SF</div>
+                        <div
+                            class="w-8 h-8 rounded-full bg-gradient-to-br from-green-400 to-teal-400 border-2 border-[#080B16] flex items-center justify-center text-[9px] font-bold text-white">
+                            MR</div>
+                    </div>
+                    <span class="text-xs text-white/50 font-sans">Trusted by <strong class="text-white">10,000+</strong>
+                        AI learners in Pakistan</span>
+                </div>
+                <div class="hero-elem font-data text-accent text-lg tracking-widest min-h-[2rem] mb-2">
+                    &gt; <span id="typing-text" class="typing-cursor"></span>
+                </div>
+
+                <div class="hero-elem flex flex-col sm:flex-row gap-5 w-full justify-center">
+                    <a href="#tools"
+                        class="btn-magnetic bg-white/10 border border-white/20 text-white px-4 py-2 rounded-full font-sans font-bold text-lg flex items-center justify-center gap-3 shadow-[0_10px_30px_rgba(124,58,237,0.3)]">
+                        <span class="relative z-10">Deploy Ecosystem</span>
+                        <i data-lucide="arrow-down-right" class="w-5 h-5 relative z-10"></i>
+                    </a>
+                    <a href="#about"
+                        class="px-4 py-2 rounded-full font-sans font-bold text-lg flex items-center justify-center gap-2 text-white/70 hover:text-white transition-colors border border-transparent hover:border-white/10">
+                        Read Philosophy
+                    </a>
+                </div>
+
+                <div
+                    class="hero-elem mt-12 flex flex-wrap items-center justify-center gap-8 border-t border-white/10 pt-8 w-full max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="font-black text-2xl text-white font-sans">500<span class="text-accent">+</span>
+                        </div>
+                        <div class="text-[10px] font-data text-white/40 tracking-widest uppercase mt-1">AI Tools</div>
+                    </div>
+                    <div class="w-px h-8 bg-white/10"></div>
+                    <div class="text-center">
+                        <div class="font-black text-2xl text-white font-sans">50<span class="text-secondary">K+</span>
+                        </div>
+                        <div class="text-[10px] font-data text-white/40 tracking-widest uppercase mt-1">Monthly Readers
+                        </div>
+                    </div>
+                    <div class="w-px h-8 bg-white/10"></div>
+                    <div class="text-center">
+                        <div class="font-black text-2xl text-white font-sans">Pakistan<span
+                                class="text-primary">#1</span></div>
+                        <div class="text-[10px] font-data text-white/40 tracking-widest uppercase mt-1">AI Platform
+                        </div>
+                    </div>
+                    <div class="w-px h-8 bg-white/10"></div>
+                    <div class="text-center">
+                        <div class="font-black text-2xl text-white font-sans">24<span class="text-accent">hrs</span>
+                        </div>
+                        <div class="text-[10px] font-data text-white/40 tracking-widest uppercase mt-1">Support Response
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== STATS COUNTER ===== -->
+    <section class="py-16 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.3)]">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-panel p-8 md:p-12">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 text-center" id="stats-container">
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4 border border-primary/30">
+                            <i data-lucide="users" class="w-6 h-6"></i>
+                        </div>
+                        <div class="stat-num text-4xl md:text-5xl font-black font-sans mb-2"><span class="counter"
+                                data-target="1.5">0</span>B+</div>
+                        <div class="text-[10px] font-bold font-data uppercase tracking-widest text-white/50">AI Users
+                            Worldwide</div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center text-secondary mb-4 border border-secondary/30">
+                            <i data-lucide="wrench" class="w-6 h-6"></i>
+                        </div>
+                        <div class="stat-num text-4xl md:text-5xl font-black font-sans mb-2"
+                            style="background: linear-gradient(135deg, #E11D48, #F472B6); -webkit-background-clip: text; background-clip: text;">
+                            <span class="counter" data-target="500">0</span>+
+                        </div>
+                        <div class="text-[10px] font-bold font-data uppercase tracking-widest text-white/50">Ecosystem
+                            Tools</div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center text-accent mb-4 border border-accent/30">
+                            <i data-lucide="eye" class="w-6 h-6"></i>
+                        </div>
+                        <div class="stat-num text-4xl md:text-5xl font-black font-sans mb-2"
+                            style="background: linear-gradient(135deg, #06B6D4, #22D3EE); -webkit-background-clip: text; background-clip: text;">
+                            <span class="counter" data-target="50">0</span>K+
+                        </div>
+                        <div class="text-[10px] font-bold font-data uppercase tracking-widest text-white/50">Processing
+                            Nodes</div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-14 h-14 rounded-full bg-green-500/10 flex items-center justify-center text-green-400 mb-4 border border-green-500/30">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <div class="stat-num text-4xl md:text-5xl font-black font-sans mb-2"
+                            style="background: linear-gradient(135deg, #4ade80, #86efac); -webkit-background-clip: text; background-clip: text;">
+                            <span class="counter" data-target="99.9">0</span>%
+                        </div>
+                        <div class="text-[10px] font-bold font-data uppercase tracking-widest text-white/50">Uptime
+                            Stability</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section id="about-me" class="py-24 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.8)]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+                <div class="gsap-about">
+                    <div class="inline-flex items-center gap-2 mb-4">
+                        <span class="w-6 h-[1px] bg-primary"></span>
+                        <span class="text-xs font-bold tracking-widest uppercase text-primary font-data">Meet The
+                            Creator</span>
+                    </div>
+                    <h2 class="font-sans font-black text-5xl md:text-6xl text-white mb-4 leading-tight">
+                        Muhammad <span class="text-gradient">Waqas.</span>
+                    </h2>
+
+                    <div class="space-y-6 font-sans text-lg text-white/60 leading-relaxed font-medium">
+                        <p>
+                            I am a technologist, AI architect, and the mind behind this neural ecosystem. My vision is
+                            to democratize advanced <strong class="text-white">artificial intelligence</strong> access
+                            for everyone, decoding complex algorithms into accessible formats.
+                        </p>
+                        <p>
+                            With a deep understanding of large language models, machine learning architectures, and
+                            modern web frameworks, I build platforms that bridge the gap between human intuition and
+                            machine logic.
+                        </p>
+
+                        <div class="pt-4 border-t border-white/10 mt-4 flex flex-wrap gap-4">
+                            <div
+                                class="px-5 py-2.5 rounded-full border border-white/10 bg-white/5 font-data text-xs tracking-widest text-white/80">
+                                AI ARCHITECTURE</div>
+                            <div
+                                class="px-5 py-2.5 rounded-full border border-white/10 bg-white/5 font-data text-xs tracking-widest text-white/80">
+                                LLM INTEGRATION</div>
+                            <div
+                                class="px-5 py-2.5 rounded-full border border-white/10 bg-white/5 font-data text-xs tracking-widest text-white/80">
+                                FULL-STACK LOGIC</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gsap-about relative">
+                    <div
+                        class="glass-panel w-full  rounded-[3rem] p-2 relative overflow-hidden flex items-center justify-center">
+                        <div class="mw-avatar">MW</div>
+                        <div class="absolute inset-0 bg-primary mix-blend-overlay opacity-30"></div>
+                        <div
+                            class="absolute bottom-10 left-10 right-10 p-3 glass-panel backdrop-blur-3xl border border-white/20">
+                            <h3 class="text-xl font-bold text-white font-sans mb-1">System Architect</h3>
+                            <p class="font-data text-xs text-primary tracking-widest opacity-80">LEAD DEVELOPER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AI LEARNING ROADMAP ===== -->
+    <section id="roadmap"
+        class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.9)] section-observe">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 gsap-title">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-6 h-[1px] bg-primary"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-primary font-data">Your AI Learning
+                        Roadmap</span>
+                    <span class="w-6 h-[1px] bg-primary"></span>
+                </div>
+                <h2 class="font-sans font-black text-4xl md:text-5xl text-white">From zero to <span
+                        class="text-gradient">AI expert.</span></h2>
+                <p class="text-white/50 max-w-2xl mx-auto mt-4">Follow this structured path to master artificial
+                    intelligence.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between relative mt-6 gap-4 md:gap-4">
+                <div
+                    class="hidden md:block absolute top-[3.5rem] left-0 w-full h-1 bg-gradient-to-r from-primary/50 via-accent/50 to-primary/50 z-0">
+                </div>
+
+                <div class="roadmap-step flex-1 text-center group gsap-about">
+                    <div
+                        class="w-24 h-24 mx-auto bg-[#080B16] border-2 border-primary rounded-full flex items-center justify-center mb-3 relative z-10 group-hover:bg-primary/20 transition-colors">
+                        <i data-lucide="book-open" class="w-8 h-8 text-white"></i>
+                        <span
+                            class="absolute -top-3 -right-3 bg-primary text-[10px] font-bold px-2 py-1 rounded shadow-lg text-white uppercase font-data">Beginner</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">1. Foundation</h3>
+                    <ul class="text-sm text-white/50 space-y-2 font-medium">
+                        <li>Learn what AI is</li>
+                        <li>Understand basic concepts</li>
+                        <li>Try ChatGPT and Gemini</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-step flex-1 text-center group gsap-about delay-100">
+                    <div
+                        class="w-24 h-24 mx-auto bg-[#080B16] border-2 border-secondary rounded-full flex items-center justify-center mb-3 relative z-10 group-hover:bg-secondary/20 transition-colors">
+                        <i data-lucide="compass" class="w-8 h-8 text-white"></i>
+                        <span
+                            class="absolute -top-3 -right-3 bg-secondary text-[10px] font-bold px-2 py-1 rounded shadow-lg text-white uppercase font-data">Intermediate</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">2. Exploration</h3>
+                    <ul class="text-sm text-white/50 space-y-2 font-medium">
+                        <li>Explore different AI tools</li>
+                        <li>Try image, video, code AI</li>
+                        <li>Follow AI news daily</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-step flex-1 text-center group gsap-about delay-200">
+                    <div
+                        class="w-24 h-24 mx-auto bg-[#080B16] border-2 border-accent rounded-full flex items-center justify-center mb-3 relative z-10 group-hover:bg-accent/20 transition-colors">
+                        <i data-lucide="brain" class="w-8 h-8 text-white"></i>
+                        <span
+                            class="absolute -top-3 -right-3 bg-accent text-[10px] font-bold px-2 py-1 rounded shadow-lg text-white uppercase font-data">Advanced</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">3. Understanding</h3>
+                    <ul class="text-sm text-white/50 space-y-2 font-medium">
+                        <li>Learn Python basics</li>
+                        <li>Understand ML concepts</li>
+                        <li>Take free online courses</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-step flex-1 text-center group gsap-about delay-300">
+                    <div
+                        class="w-24 h-24 mx-auto bg-[#080B16] border-2 border-blue-500 rounded-full flex items-center justify-center mb-3 relative z-10 group-hover:bg-blue-500/20 transition-colors">
+                        <i data-lucide="rocket" class="w-8 h-8 text-white"></i>
+                        <span
+                            class="absolute -top-3 -right-3 bg-blue-500 text-[10px] font-bold px-2 py-1 rounded shadow-lg text-white uppercase font-data">Professional</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">4. Application</h3>
+                    <ul class="text-sm text-white/50 space-y-2 font-medium">
+                        <li>Build AI projects</li>
+                        <li>Use AI APIs</li>
+                        <li>Create AI-powered tools</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-step flex-1 text-center group gsap-about delay-400">
+                    <div
+                        class="w-24 h-24 mx-auto bg-[#080B16] border-2 border-green-500 rounded-full flex items-center justify-center mb-3 relative z-10 group-hover:bg-green-500/20 transition-colors">
+                        <i data-lucide="award" class="w-8 h-8 text-white"></i>
+                        <span
+                            class="absolute -top-3 -right-3 bg-green-500 text-[10px] font-bold px-2 py-1 rounded shadow-lg text-white uppercase font-data">Expert</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">5. Mastery</h3>
+                    <ul class="text-sm text-white/50 space-y-2 font-medium">
+                        <li>Contribute to open source</li>
+                        <li>Fine-tune models</li>
+                        <li>Teach others AI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- original about AI section -->
+    <section id="about" class="py-24 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.5)]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+
+                <div class="gsap-about relative">
+                    <!-- Image collage -->
+                    <div class="glass-panel w-full rounded-[3rem] p-8 relative overflow-hidden min-h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=70&w=1080&auto=format&fit=crop"
+                            class="w-full h-full object-cover rounded-[2.5rem] opacity-70 grayscale hover:grayscale-0 transition-all duration-700"
+                            alt="Muhammad Waqas" loading="lazy" />
+                        <div class="absolute inset-0 bg-primary mix-blend-overlay opacity-50"></div>
+                    </div>
+                    <!-- Floating decorative element -->
+                    <div
+                        class="absolute -bottom-10 -right-10 w-48 h-48 glass-panel rounded-full flex items-center justify-center p-2 backdrop-blur-3xl animate-[spin_15s_linear_infinite]">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=70&w=800&auto=format&fit=crop"
+                            class="w-full h-full object-cover rounded-full mix-blend-screen opacity-50"
+                            loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="gsap-about">
+                    <h2 class="font-sans font-black text-5xl md:text-6xl text-white mb-4 leading-tight">
+                        The Reality of <br /><span class="text-gradient">Cognitive Fusion.</span>
+                    </h2>
+
+                    <div class="space-y-6 font-sans text-lg text-white/60 leading-relaxed font-medium">
+                        <p>
+                            Artificial Intelligence is not mimicking reality—it is creating a new substrate for human
+                            logic. By routing massive datasets through mathematical neural networks, the system achieves
+                            <strong class="text-white">predictive synthesis</strong> surpassing specific human
+                            capabilities.
+                        </p>
+                        <p>
+                            Today, global enterprises actively utilize machine learning models to orchestrate workflow,
+                            analyze biological markers, and deploy code in milliseconds.
+                        </p>
+
+                        <div class="pt-4 border-t border-white/10 mt-4">
+                            <div class="flex items-center gap-6 mb-4 group hover:-translate-y-1 transition-transform">
+                                <div
+                                    class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <i data-lucide="database" class="w-8 h-8"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white mb-1">Massive Data Ingestion</h3>
+                                    <p class="text-sm">Consuming oceans of human logic to build a structured foundation.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-6 group hover:-translate-y-1 transition-transform">
+                                <div
+                                    class="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
+                                    <i data-lucide="network" class="w-8 h-8"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white mb-1">Deep Neural Patterning</h3>
+                                    <p class="text-sm">Routing predictive text algorithms through hidden computational
+                                        layers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW AI WORKS ===== -->
+    <section id="how-ai-works" class="py-24 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.7)]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-3 gsap-title">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-6 h-[1px] bg-secondary"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-secondary font-data">Core
+                        Mechanics</span>
+                    <span class="w-6 h-[1px] bg-secondary"></span>
+                </div>
+                <h2 class="font-sans font-black text-5xl md:text-6xl text-white mb-4">How <span class="text-gradient">AI
+                        Works.</span></h2>
+                <p class="font-sans text-white/50 text-lg max-w-2xl mx-auto mt-6">Decoding the neural pathways that
+                    transform raw data into intelligent synthesis.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="glass-panel p-10 gsap-about">
+                    <div
+                        class="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-primary mb-4">
+                        <i data-lucide="database" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-sans font-bold text-2xl text-white mb-4">1. Data Ingestion</h3>
+                    <p class="font-sans text-white/60 leading-relaxed text-sm">AI systems ingest massive datasets from
+                        text, images, and logic trees. This forms the foundational knowledge base, essentially feeding
+                        "experience" to the computational brain.</p>
+                </div>
+
+                <div class="glass-panel p-10 gsap-about delay-100">
+                    <div
+                        class="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-secondary mb-4">
+                        <i data-lucide="network" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-sans font-bold text-2xl text-white mb-4">2. Neural Processing</h3>
+                    <p class="font-sans text-white/60 leading-relaxed text-sm">Using deep learning algorithms, the raw
+                        data is filtered through millions of parameters. The system identifies complex patterns,
+                        relationships, and statistical probabilities.</p>
+                </div>
+
+                <div class="glass-panel p-10 gsap-about delay-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-accent mb-4">
+                        <i data-lucide="cpu" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-sans font-bold text-2xl text-white mb-4">3. Predictive Output</h3>
+                    <p class="font-sans text-white/60 leading-relaxed text-sm">When queried, the trained model
+                        algorithmically predicts the most logical sequence of text, pixels, or code. The result is
+                        human-like comprehension and generative creation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== AI TOOLS GRID ===== -->
+    <section id="tools" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.6)]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-3 gsap-title">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-6 h-[1px] bg-primary"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-primary font-data">Top AI Tools of
+                        2025</span>
+                    <span class="w-6 h-[1px] bg-primary"></span>
+                </div>
+                <h2 class="font-sans font-black text-5xl md:text-6xl text-white mb-4">Core Processing <span
+                        class="text-gradient">Engines.</span></h2>
+            </div>
+
+            <!-- Filter -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-3 gsap-title">
+                <button class="filter-btn active" onclick="filterData('all')">All Nodes</button>
+                <button class="filter-btn" onclick="filterData('Chatbot')">🤖 Chatbots</button>
+                <button class="filter-btn" onclick="filterData('Image')">🎨 Image Arrays</button>
+                <button class="filter-btn" onclick="filterData('Video')">🎬 Video Synthesis</button>
+                <button class="filter-btn" onclick="filterData('Code')">💻 Code Logic</button>
+            </div>
+
+            <div id="tools-grid-cont" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Functional Artifacts (The Ecosystem) -->
+    <section class="py-24 px-6 relative z-10 bg-[rgba(8,11,22,0.8)]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12 text-center gsap-title">
+                <h2 class="font-sans font-black text-5xl md:text-6xl text-white mb-4">Unified Ecosystem</h2>
+                <p class="font-sans text-white/50 text-lg max-w-2xl mx-auto">Interactive artifacts demonstrating live
+                    telemetry and model processing.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <!-- Card 1: Diagnostic Shuffler -->
+                <div class="feature-card glass-panel p-8 flex flex-col h-[400px]">
+                    <h3 class="font-sans font-bold text-2xl text-white z-10 flex items-center gap-3"><i
+                            data-lucide="layers" class="text-primary"></i> Multi-Model Engine</h3>
+                    <p class="font-sans text-white/50 text-sm mt-3 z-10">Parallel access to billions of parameters.</p>
+                    <div class="flex-1 relative mt-6 flex justify-center items-end pb-4" id="shuffler-container"></div>
+                </div>
+
+                <!-- Card 2: Telemetry Typewriter -->
+                <div class="feature-card glass-panel p-8 flex flex-col h-[400px]">
+                    <div class="flex justify-between items-center mb-3 z-10">
+                        <h3 class="font-sans font-bold text-2xl text-white flex items-center gap-3"><i
+                                data-lucide="terminal" class="text-accent"></i> Telemetry Feed</h3>
+                        <div
+                            class="flex items-center gap-2 bg-black/50 border border-accent/30 px-3 py-1.5 rounded-full">
+                            <div class="w-2 h-2 rounded-full bg-accent animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-1 font-data text-[13px] leading-relaxed text-cyan-200/80 whitespace-pre-wrap mt-4 z-10 bg-black/50 p-2 rounded-xl border border-white/5 overflow-hidden shadow-inner">
+                        <span id="typewriter-text"></span><span
+                            class="inline-block w-2 bg-accent h-[1.1em] ml-1 animate-pulse align-middle"></span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Cursor Protocol Scheduler -->
+                <div class="feature-card glass-panel p-8 flex flex-col h-[400px]">
+                    <h3 class="font-sans font-bold text-2xl text-white z-10 flex items-center gap-3"><i
+                            data-lucide="calendar-clock" class="text-secondary"></i> Autonomous Logic</h3>
+                    <p class="font-sans text-white/50 text-sm mt-3 z-10">Self-regulating ecosystem models activating
+                        endpoints.</p>
+
+                    <div
+                        class="flex-1 relative mt-4 flex flex-col items-center justify-center z-10 bg-black/30 rounded-xl border border-white/5 overflow-hidden">
+                        <div class="flex gap-2 mb-4">
+                            <div
+                                class="day-cell w-8 h-8 rounded-lg flex items-center justify-center font-data text-xs border border-white/5 text-white/30">
+                                M</div>
+                            <div
+                                class="day-cell-target w-8 h-8 rounded-lg flex items-center justify-center font-data text-xs border border-white/20 bg-white/5 text-white transition-colors">
+                                T</div>
+                            <div
+                                class="day-cell w-8 h-8 rounded-lg flex items-center justify-center font-data text-xs border border-white/5 text-white/30">
+                                W</div>
+                            <div
+                                class="day-cell w-8 h-8 rounded-lg flex items-center justify-center font-data text-xs border border-white/5 text-white/30">
+                                T</div>
+                            <div
+                                class="day-cell w-8 h-8 rounded-lg flex items-center justify-center font-data text-xs border border-white/5 text-white/30">
+                                F</div>
+                        </div>
+                        <div
+                            class="save-btn px-6 py-2 rounded-full border border-secondary text-secondary font-bold text-xs">
+                            Deploy Action</div>
+
+                        <svg class="cursor-svg absolute w-6 h-6 z-20 pointer-events-none drop-shadow-2xl text-white"
+                            style="top:20px; left:20px" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 2L20 10.6L12.5 12.5L10.6 20L4 2Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AI INSIGHTS (BLOG) ===== -->
+    <section id="news" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.95)]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-3 gsap-title">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-6 h-[1px] bg-secondary"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-secondary font-data">Latest
+                        Transmissions</span>
+                    <span class="w-6 h-[1px] bg-secondary"></span>
+                </div>
+                <h2 class="font-sans font-black text-5xl md:text-6xl text-white mb-4">Global Network <span
+                        class="text-gradient">Insights.</span></h2>
+            </div>
+
+            <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <div class="relative z-10 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mx-6"></div>
+
+    <!-- ===== NEWSLETTER SUBSCRIPTION ===== -->
+    <section class="py-20 px-6 relative z-10 border-t border-white/5 bg-[rgba(15,20,35,0.8)] overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-accent/10 pointer-events-none">
+        </div>
+        <div class="max-w-4xl mx-auto text-center relative z-20">
+            <div class="glass-panel p-10 md:p-16 shadow-[0_0_60px_rgba(6,182,212,0.15)] border-accent/30 relative">
+
+                <div
+                    class="w-20 h-20 rounded-full bg-accent/10 border border-accent/20 mx-auto flex items-center justify-center text-accent mb-3 shadow-[0_0_20px_rgba(6,182,212,0.3)]">
+                    <i data-lucide="mail" class="w-10 h-10"></i>
+                </div>
+
+                <h2 class="font-sans font-black text-4xl md:text-5xl text-white mb-4">Stay Ahead of the <span
+                        class="text-gradient">AI Curve.</span></h2>
+                <p class="text-white/60 text-lg mb-5 max-w-xl mx-auto">Join 10,000+ AI enthusiasts getting weekly
+                    updates on tools, news, and tutorials.</p>
+
+                <form id="newsletter-form" action="https://formsubmit.co/mwaqas5491@gmail.com" method="POST"
+                    class="max-w-xl mx-auto flex flex-col sm:flex-row gap-3 relative">
+                    <!-- FormSubmit hidden config -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="New Newsletter Subscriber - Waqas AI World">
+                    <input type="hidden" name="_next" value="https://muhammadwaqasaiworld.com/#home">
+                    <input type="hidden" name="message"
+                        value="New subscriber signed up via the website newsletter form.">
+                    <input type="email" id="news-email" name="email" required
+                        placeholder="Enter your email routing address..."
+                        class="flex-1 bg-black/40 border border-white/10 rounded-2xl px-6 py-4 text-white font-medium focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/50 transition-all placeholder:text-white/30" />
+                    <button type="submit"
+                        class="bg-gradient-to-r from-primary to-accent text-white px-4 py-4 rounded-2xl font-bold font-sans shadow-lg hover:shadow-accent/30 transition-shadow">Subscribe
+                        Now</button>
+                    <!-- Success Overlay (shown by JS confetti handler) -->
+                    <div id="newsletter-success"
+                        class="absolute inset-0 bg-[#080B16]/90 backdrop-blur-md rounded-2xl hidden items-center justify-center border border-green-500/30">
+                        <span class="text-green-400 font-bold text-lg flex items-center gap-2"><i
+                                data-lucide="check-circle"></i> You're in! Welcome to the future.</span>
+                    </div>
+                </form>
+
+                <div class="mt-4 flex items-center justify-center gap-4">
+                    <div class="flex">
+                        <div class="w-10 h-10 rounded-full border-2 border-[#090C1A] -ml-3 bg-gray-500 bg-cover bg-center"
+                            style="background-image:url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80'); margin-left: 0;">
+                        </div>
+                        <div class="w-10 h-10 rounded-full border-2 border-[#090C1A] -ml-3 bg-gray-500 bg-cover bg-center"
+                            style="background-image:url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80'); z-index: 2;">
+                        </div>
+                        <div class="w-10 h-10 rounded-full border-2 border-[#090C1A] -ml-3 bg-gray-500 bg-cover bg-center"
+                            style="background-image:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80'); z-index: 3;">
+                        </div>
+                    </div>
+                    <div class="text-sm font-data text-white/50 tracking-widest uppercase">Join <strong
+                            class="text-white" id="news-counter">10,423</strong> subscribers</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== ABOUT AI — EXPANDED ===== -->
+        <section id="about-ai"
+            class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.85)] section-observe">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 gsap-title">
+                    <div class="inline-flex items-center gap-2 mb-4">
+                        <span class="w-6 h-[1px] bg-accent"></span>
+                        <span class="text-xs font-bold tracking-widest uppercase text-accent font-data">Deep Dive</span>
+                        <span class="w-6 h-[1px] bg-accent"></span>
+                    </div>
+                    <h2 class="font-sans font-black text-4xl md:text-5xl text-white mb-4">Everything About <span
+                            class="text-gradient">Artificial Intelligence</span></h2>
+                    <p class="text-white/60 max-w-2xl mx-auto text-lg">A comprehensive guide to understanding AI — from
+                        fundamentals to the future.</p>
+                </div>
+
+                <!-- Row 1: What is AI + Types -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div
+                        class="glass-panel p-10 gsap-about border border-primary/20 hover:border-primary/40 transition-colors">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 border border-primary/30">
+                            <i data-lucide="brain" class="w-7 h-7 text-primary"></i>
+                        </div>
+                        <h3 class="font-sans font-black text-2xl text-white mb-4">What is Artificial Intelligence?</h3>
+                        <p class="text-white/65 leading-relaxed mb-4">Artificial Intelligence (AI) is the simulation of
+                            human intelligence in machines. AI systems learn from data, identify patterns, make
+                            decisions, and improve over time — often outperforming humans in specific tasks.</p>
+                        <p class="text-white/65 leading-relaxed">From voice assistants like Siri to self-driving cars,
+                            AI is no longer science fiction — it is the engine powering the 21st century economy,
+                            healthcare, education, and creativity.</p>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span
+                                class="px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold font-data">Learning
+                                Systems</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold font-data">Pattern
+                                Recognition</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-bold font-data">Decision
+                                Making</span>
+                        </div>
+                    </div>
+                    <div
+                        class="glass-panel p-10 gsap-about delay-100 border border-accent/20 hover:border-accent/40 transition-colors">
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 border border-accent/30">
+                            <i data-lucide="layers" class="w-7 h-7 text-accent"></i>
+                        </div>
+                        <h3 class="font-sans font-black text-2xl text-white mb-4">Types of AI</h3>
+                        <div class="space-y-4">
+                            <div class="flex gap-4 items-start">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center shrink-0 mt-1">
+                                    <i data-lucide="zap" class="w-4 h-4 text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-white text-sm mb-1">Narrow AI (ANI)</p>
+                                    <p class="text-white/55 text-sm leading-relaxed">AI that excels at one specific
+                                        task. Examples: ChatGPT, Google Translate, Face Recognition.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center shrink-0 mt-1">
+                                    <i data-lucide="cpu" class="w-4 h-4 text-accent"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-white text-sm mb-1">General AI (AGI)</p>
+                                    <p class="text-white/55 text-sm leading-relaxed">Hypothetical AI that matches
+                                        human-level intelligence across all domains. Still in research.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-secondary/20 flex items-center justify-center shrink-0 mt-1">
+                                    <i data-lucide="infinity" class="w-4 h-4 text-secondary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-white text-sm mb-1">Super AI (ASI)</p>
+                                    <p class="text-white/55 text-sm leading-relaxed">Theoretical AI surpassing human
+                                        intelligence in every domain. The future frontier.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: ML + Deep Learning + LLMs -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <div
+                        class="glass-panel p-8 gsap-about hover:border-primary/30 border border-white/5 transition-all">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4 border border-purple-500/30">
+                            <i data-lucide="git-branch" class="w-6 h-6 text-purple-400"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg mb-3">Machine Learning</h3>
+                        <p class="text-white/60 text-sm leading-relaxed mb-4">ML trains algorithms on data so they can
+                            make predictions without explicit programming. The model improves as it sees more data.</p>
+                        <ul class="space-y-2 text-xs text-white/50 font-data">
+                            <li class="flex items-center gap-2"><i data-lucide="check"
+                                    class="w-3 h-3 text-green-400"></i> Supervised Learning</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check"
+                                    class="w-3 h-3 text-green-400"></i> Unsupervised Learning</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check"
+                                    class="w-3 h-3 text-green-400"></i> Reinforcement Learning</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="glass-panel p-8 gsap-about delay-100 hover:border-cyan-500/30 border border-white/5 transition-all">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-4 border border-cyan-500/30">
+                            <i data-lucide="network" class="w-6 h-6 text-cyan-400"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg mb-3">Deep Learning</h3>
+                        <p class="text-white/60 text-sm leading-relaxed mb-4">Deep Learning uses neural networks with
+                            many layers. It powers image recognition, speech synthesis, and generative AI at scale.</p>
+                        <ul class="space-y-2 text-xs text-white/50 font-data">
+                            <li class="flex items-center gap-2"><i data-lucide="check"
+                                    class="w-3 h-3 text-green-400"></i> Convolutional Neural Nets</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check"
+                                    class="w-3 h-3 text-green-400"></i> Recurrent Neural Nets</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check"
+                                    class="w-3 h-3 text-green-400"></i> Transformer Architecture</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="glass-panel p-8 gsap-about delay-200 hover:border-pink-500/30 border border-white/5 transition-all">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center mb-4 border border-pink-500/30">
+                            <i data-lucide="message-square" class="w-6 h-6 text-pink-400"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg mb-3">Large Language Models</h3>
+                        <p class="text-white/60 text-sm leading-relaxed mb-4">LLMs like GPT-4, Claude, and Gemini are
+                            trained on vast text data to understand and generate human language with remarkable fluency.
+                        </p>
+                        <ul class="space-y-2 text-xs text-white/50 font-data">
+                            <li class="flex items-center gap-2"><i data-lucide="check"
+                                    class="w-3 h-3 text-green-400"></i> Text Generation</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check"
+                                    class="w-3 h-3 text-green-400"></i> Code Writing</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check"
+                                    class="w-3 h-3 text-green-400"></i> Reasoning & Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Row 3: AI Applications banner -->
+                <div
+                    class="glass-panel p-10 border border-white/5 bg-gradient-to-r from-primary/5 via-transparent to-accent/5">
+                    <h3 class="font-sans font-black text-2xl text-white mb-6 text-center">AI in the Real World</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                        <div
+                            class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/3 hover:bg-white/5 transition border border-white/5 text-center">
+                            <i data-lucide="stethoscope" class="w-7 h-7 text-red-400"></i>
+                            <span class="text-xs font-bold text-white/70 font-data uppercase">Healthcare</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/3 hover:bg-white/5 transition border border-white/5 text-center">
+                            <i data-lucide="landmark" class="w-7 h-7 text-yellow-400"></i>
+                            <span class="text-xs font-bold text-white/70 font-data uppercase">Finance</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/3 hover:bg-white/5 transition border border-white/5 text-center">
+                            <i data-lucide="graduation-cap" class="w-7 h-7 text-green-400"></i>
+                            <span class="text-xs font-bold text-white/70 font-data uppercase">Education</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/3 hover:bg-white/5 transition border border-white/5 text-center">
+                            <i data-lucide="car" class="w-7 h-7 text-blue-400"></i>
+                            <span class="text-xs font-bold text-white/70 font-data uppercase">Automotive</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/3 hover:bg-white/5 transition border border-white/5 text-center">
+                            <i data-lucide="palette" class="w-7 h-7 text-purple-400"></i>
+                            <span class="text-xs font-bold text-white/70 font-data uppercase">Creative Arts</span>
+                        </div>
+                        <div
+                            class="flex flex-col items-center gap-2 p-4 rounded-2xl bg-white/3 hover:bg-white/5 transition border border-white/5 text-center">
+                            <i data-lucide="shield" class="w-7 h-7 text-cyan-400"></i>
+                            <span class="text-xs font-bold text-white/70 font-data uppercase">Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ SECTION — EXPANDED ===== -->
+        <section id="faq" class="py-24 px-6 relative z-10 bg-[rgba(8,11,22,0.9)]">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12 gsap-title">
+                    <div class="inline-flex items-center gap-2 mb-4">
+                        <span class="w-6 h-[1px] bg-primary"></span>
+                        <span class="text-xs font-bold tracking-widest uppercase text-primary font-data">Got
+                            Questions?</span>
+                        <span class="w-6 h-[1px] bg-primary"></span>
+                    </div>
+                    <h2 class="font-sans font-black text-4xl md:text-5xl text-white mb-4">Frequently Asked <span
+                            class="text-gradient">Questions</span></h2>
+                    <p class="text-white/60 max-w-xl mx-auto">Everything you need to know about AI, this platform, and
+                        how to get started.</p>
+                </div>
+
+                <div class="space-y-4">
+
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>What is Muhammad Waqas AI World?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p class="pb-4">Muhammad Waqas AI World is Pakistan's #1 AI education and tools platform. We
+                                curate 500+ AI tools, publish tutorials, news, and guides to help you master Artificial
+                                Intelligence — whether you're a student, developer, or business owner.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>What is AI and why should I learn it?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p class="pb-4">Artificial Intelligence is the technology that lets machines think, learn,
+                                and make decisions. Learning AI is one of the most future-proof investments in 2025 — AI
+                                skills are in demand across every industry, from healthcare to finance, education to
+                                content creation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>How do I start learning AI as a beginner?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p class="pb-2">Start with these 4 steps:</p>
+                            <ol class="list-decimal ml-5 space-y-2 text-white/60 pb-4 text-sm">
+                                <li><strong class="text-white">Understand the basics</strong> — Learn what AI, ML, and
+                                    Deep Learning are (this platform covers it).</li>
+                                <li><strong class="text-white">Pick a tool</strong> — Start with ChatGPT or Google
+                                    Gemini to experience AI hands-on.</li>
+                                <li><strong class="text-white">Follow our Roadmap</strong> — Our structured AI learning
+                                    roadmap guides you step by step.</li>
+                                <li><strong class="text-white">Practice daily</strong> — Use AI tools every day and
+                                    explore our 500+ curated tools.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>What is ChatGPT and how do I use it?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p class="pb-4">ChatGPT is an AI chatbot by OpenAI that can write, code, explain concepts,
+                                translate, summarize, and much more. Go to <strong
+                                    class="text-accent">chat.openai.com</strong>, create a free account, and start
+                                chatting. For advanced use, GPT-4 (paid) gives far better results than GPT-3.5 (free).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>What is the difference between ChatGPT, Gemini, Claude, and DeepSeek?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <div class="pb-4 space-y-3 text-sm">
+                                <div class="flex gap-3"><span
+                                        class="text-accent font-bold w-24 shrink-0">ChatGPT</span><span
+                                        class="text-white/60">Best for general tasks, coding, writing. By OpenAI. Most
+                                        popular worldwide.</span></div>
+                                <div class="flex gap-3"><span
+                                        class="text-yellow-400 font-bold w-24 shrink-0">Gemini</span><span
+                                        class="text-white/60">Google's AI, deeply integrated with Google Search, Docs,
+                                        and Gmail.</span></div>
+                                <div class="flex gap-3"><span
+                                        class="text-purple-400 font-bold w-24 shrink-0">Claude</span><span
+                                        class="text-white/60">By Anthropic. Excellent for long documents, analysis, and
+                                        safe conversations.</span></div>
+                                <div class="flex gap-3"><span
+                                        class="text-red-400 font-bold w-24 shrink-0">DeepSeek</span><span
+                                        class="text-white/60">Chinese open-source LLM. Surprisingly capable at coding
+                                        and math tasks.</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q6 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>Is AI going to take away jobs?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p class="pb-4">AI will automate repetitive tasks but will also create millions of new jobs.
+                                The key is to become someone who <strong class="text-white">uses AI</strong>, not
+                                someone replaced by it. Roles in AI engineering, prompt engineering, AI ethics, data
+                                science, and AI product management are growing rapidly. Learn AI now while others are
+                                sleeping on it.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q7 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>Do I need to learn coding to use AI?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p class="pb-4">No — many powerful AI tools (ChatGPT, Midjourney, Jasper, etc.) require zero
+                                coding knowledge. However, if you want to <em>build</em> AI systems, Python is the best
+                                language to learn. Our roadmap covers both no-code and coding AI paths.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q8 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>What AI tools are best for students in Pakistan?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p class="pb-4">Top AI tools for Pakistani students:</p>
+                            <ul class="list-disc ml-5 space-y-2 text-white/60 pb-4 text-sm">
+                                <li><strong class="text-white">ChatGPT</strong> — Essay writing, research, code help,
+                                    study summaries.</li>
+                                <li><strong class="text-white">Grammarly</strong> — English writing and grammar
+                                    improvement.</li>
+                                <li><strong class="text-white">Canva AI</strong> — Design presentations with AI
+                                    assistance.</li>
+                                <li><strong class="text-white">Bing AI</strong> — Free GPT-4 access via Microsoft Edge
+                                    browser.</li>
+                                <li><strong class="text-white">Gemini</strong> — Free, excellent research assistant by
+                                    Google.</li>
+                                <li><strong class="text-white">Perplexity AI</strong> — AI search engine with cited
+                                    sources.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Q9 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>How can I contact Muhammad Waqas directly?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p class="pb-4">You can reach Muhammad Waqas through the <strong class="text-white">Contact
+                                    section</strong> of this website, via <strong class="text-white">WhatsApp at +92 309
+                                    1234567</strong>, or by emailing <strong
+                                    class="text-accent">waqas@muhammadwaqasaiworld.com</strong>. We typically respond
+                                within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q10 -->
+                    <div class="faq-item">
+                        <button class="faq-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <span>What will AI look like in 5 years?</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent shrink-0"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p class="pb-4">Within 5 years, expect: real-time AI companions, AI that autonomously writes
+                                and ships software, personalized AI tutors for every student, AI doctors assisting with
+                                diagnosis, and full multimodal AI (text, voice, image, video all unified). The pace of
+                                progress is accelerating — staying informed is no longer optional.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== DEDICATED CONTACT PAGE ===== -->
+        <section id="contact-page"
+            class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.95)] section-observe">
+            <div class="max-w-7xl mx-auto">
+                <!-- Hero Header -->
+                <div class="text-center mb-3 gsap-title">
+                    <div class="inline-flex items-center gap-2 mb-4">
+                        <span class="text-xs font-bold tracking-widest text-white/50 font-data">Home</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4 text-white/30"></i>
+                        <span class="text-xs font-bold tracking-widest text-primary font-data uppercase">Contact
+                            Us</span>
+                    </div>
+                    <h2 class="font-sans font-black text-5xl md:text-7xl text-white mb-3">Get In Touch <span
+                            class="text-gradient">With Us.</span></h2>
+                    <p class="font-sans text-white/50 text-xl font-medium max-w-2xl mx-auto">We respond within 24 hours,
+                        always. Secure your connection to the neural core.</p>
+                </div>
+
+                <!-- 3-Column Info Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <div
+                        class="glass-panel p-10 flex flex-col items-center text-center gsap-about border-t-2 border-t-primary/50 hover:border-t-primary transition-all">
+                        <div
+                            class="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-3">
+                            <i data-lucide="map-pin" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Our Location</h3>
+                        <p class="text-white/80 font-bold mb-1">Pakistan 🇵🇰 | Available Worldwide</p>
+                        <p class="text-sm font-data text-white/40 tracking-widest uppercase">Remote-first architecture
+                        </p>
+                    </div>
+
+                    <div
+                        class="glass-panel p-10 flex flex-col items-center text-center gsap-about delay-100 border-t-2 border-t-secondary/50 hover:border-t-secondary transition-all">
+                        <div
+                            class="w-16 h-16 rounded-full bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary mb-3">
+                            <i data-lucide="mail" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Email Direct</h3>
+                        <p class="text-white/80 font-bold mb-1"><a href="mailto:mwaqas5401@gmail.com"
+                                class="hover:text-secondary transition-colors">mwaqas5401@gmail.com</a></p>
+                        <p class="text-sm font-data text-white/40 tracking-widest uppercase">Response within 24 hours
+                        </p>
+                    </div>
+
+                    <div
+                        class="glass-panel p-10 flex flex-col items-center text-center gsap-about delay-200 border-t-2 border-t-accent/50 hover:border-t-accent transition-all">
+                        <div
+                            class="w-16 h-16 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center text-accent mb-3">
+                            <i data-lucide="message-circle" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">WhatsApp Secure</h3>
+                        <p class="text-white/80 font-bold mb-1"><a href="https://wa.me/923045491795" target="_blank"
+                                rel="noopener noreferrer" class="hover:text-accent transition-colors">+92 3045491795</a>
+                        </p>
+                        <p class="text-sm font-data text-white/40 tracking-widest uppercase">Mon–Sat, 9AM–10PM PKT</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 items-start">
+                    <!-- Full Contact Form -->
+                    <div
+                        class="glass-panel p-10 md:p-14 border border-primary/40 shadow-[0_0_80px_rgba(124,58,237,0.15)] bg-[rgba(15,20,35,0.8)] relative overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-64 h-48 bg-secondary/20 rounded-full blur-[80px] pointer-events-none z-0">
+                        </div>
+                        <h3 class="font-sans font-black text-3xl text-white mb-4 relative z-10">Send a Transmission</h3>
+
+                        <form id="accessForm" class="space-y-6 relative z-10" method="POST"
+                            action="https://formsubmit.co/mwaqas5491@gmail.com">
+                            <!-- FormSubmit.co config -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="New Message - Waqas AI World">
+                            <input type="hidden" name="_autoresponse"
+                                value="Thank you for contacting Muhammad Waqas AI World! We will reply within 24 hours.">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2 relative">
+                                    <label class="font-data text-xs tracking-widest text-white/40 font-bold ml-2"
+                                        for="fname">FULL NAME <span class="text-secondary">*</span></label>
+                                    <input id="fname" name="name" required type="text" placeholder="John Doe"
+                                        class="w-full bg-black/40 border border-white/10 rounded-2xl px-6 py-4 text-white font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-white/20 peer" />
+                                    <i data-lucide="check"
+                                        class="absolute right-4 top-10 text-green-500 w-5 h-5 opacity-0 transition-opacity peer-valid:opacity-100 hidden"></i>
+                                    <span id="fname-err" class="text-secondary text-xs ml-4 hidden">Identity
+                                        required.</span>
+                                </div>
+                                <div class="space-y-2 relative">
+                                    <label class="font-data text-xs tracking-widest text-white/40 font-bold ml-2"
+                                        for="femail">EMAIL ADDRESS <span class="text-secondary">*</span></label>
+                                    <input id="femail" name="email" required type="email" placeholder="john@company.com"
+                                        class="w-full bg-black/40 border border-white/10 rounded-2xl px-6 py-4 text-white font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-white/20 peer" />
+                                    <i data-lucide="check"
+                                        class="absolute right-4 top-10 text-green-500 w-5 h-5 opacity-0 transition-opacity peer-valid:opacity-100 hidden"></i>
+                                    <span id="femail-err" class="text-secondary text-xs ml-4 hidden">Valid routing
+                                        address
+                                        required.</span>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="font-data text-xs tracking-widest text-white/40 font-bold ml-2"
+                                        for="fphone">PHONE NUMBER</label>
+                                    <input id="fphone" name="phone" type="tel" placeholder="+1 (555) 000-0000"
+                                        class="w-full bg-black/40 border border-white/10 rounded-2xl px-6 py-4 text-white font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-white/20" />
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="font-data text-xs tracking-widest text-white/40 font-bold ml-2"
+                                        for="fsubject">SUBJECT ENQUIRY</label>
+                                    <select id="fsubject" name="subject"
+                                        class="w-full bg-[#0d1117] border border-white/10 rounded-2xl px-6 py-4 text-white font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all appearance-none cursor-pointer">
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="AI Tool Review Request">AI Tool Review Request</option>
+                                        <option value="Collaboration">Collaboration</option>
+                                        <option value="Sponsorship">Sponsorship</option>
+                                        <option value="Report a Bug">Report a Bug</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2 relative">
+                                <label class="font-data text-xs tracking-widest text-white/40 font-bold ml-2"
+                                    for="fmsg">TRANSMISSION PACKAGE <span class="text-secondary">*</span></label>
+                                <textarea id="fmsg" name="message" required rows="4" minlength="20"
+                                    placeholder="Define your logic parameters... (min 20 chars)"
+                                    class="w-full bg-black/40 border border-white/10 rounded-2xl px-6 py-4 text-white font-medium focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all placeholder:text-white/20 resize-none peer"></textarea>
+                                <i data-lucide="check"
+                                    class="absolute right-4 top-10 text-green-500 w-5 h-5 opacity-0 transition-opacity peer-valid:opacity-100 hidden"></i>
+                                <span id="fmsg-err" class="text-secondary text-xs ml-4 hidden">Package required (min 20
+                                    characters).</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 ml-2">
+                                <input type="checkbox" id="fprivacy" required
+                                    class="w-4 h-4 rounded border-white/10 bg-black/40 text-primary focus:ring-primary focus:ring-offset-[#080B16] cursor-pointer" />
+                                <label for="fprivacy" class="text-sm text-white/50 cursor-pointer">I agree to the <a
+                                        href="#"
+                                        class="text-accent underline hover:text-white transition-colors">Privacy
+                                        Policy</a>.</label>
+                            </div>
+                            <span id="fprivacy-err" class="text-secondary text-xs ml-4 hidden">You must agree to the
+                                privacy
+                                policy.</span>
+
+                            <button type="submit" id="submitBtn"
+                                class="btn-magnetic w-full py-2 rounded-2xl bg-gradient-to-r from-primary to-secondary text-white font-sans font-bold text-lg mt-2 shadow-[0_10px_30px_rgba(225,29,72,0.3)] border-none">
+                                <span class="relative z-10 flex items-center justify-center gap-2 btn-text">Send Message
+                                    🚀</span>
+                            </button>
+                        </form>
+
+                        <div id="successState" style="display: none; height: 500px;"
+                            class="flex-col items-center justify-center text-center relative z-10">
+                            <svg class="w-24 h-24 mb-3 z-20 text-green-500 checkmark-svg" viewBox="0 0 52 52"
+                                fill="none" stroke="currentColor" stroke-width="4" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark-check" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                            <h4 class="font-black text-3xl text-white mb-3">Transmission Successful.</h4>
+                            <p class="text-white/60 mb-3">Your parameters have been logged into the neural core. We will
+                                respond within 24 hours.</p>
+                            <button onclick="location.reload()"
+                                class="px-6 py-2 rounded-full border border-white/20 text-white/50 hover:text-white hover:bg-white/10 transition-colors">Send
+                                Another</button>
+                        </div>
+                    </div>
+
+                    <!-- Socials & Mini FAQ -->
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <h3 class="font-sans font-black text-3xl text-white mb-3">Connect on Social Media</h3>
+                            <div class="flex gap-4 flex-wrap">
+                                <a href="https://youtube.com/@WaqasAIWorld" target="_blank" rel="noopener noreferrer"
+                                    class="group flex items-center gap-3 bg-white/5 hover:bg-red-500/10 border border-white/10 hover:border-red-500/50 px-5 py-3 rounded-xl transition-all w-[calc(50%-0.5rem)] sm:w-auto text-white/70 hover:text-white"
+                                    aria-label="YouTube">
+                                    <i data-lucide="youtube" class="w-5 h-5 text-red-500"></i> <span
+                                        class="font-bold text-sm">YouTube</span>
+                                </a>
+                                <a href="https://twitter.com/WaqasAIWorld" target="_blank" rel="noopener noreferrer"
+                                    class="group flex items-center gap-3 bg-white/5 hover:bg-blue-400/10 border border-white/10 hover:border-blue-400/50 px-5 py-3 rounded-xl transition-all w-[calc(50%-0.5rem)] sm:w-auto text-white/70 hover:text-white"
+                                    aria-label="Twitter">
+                                    <i data-lucide="twitter" class="w-5 h-5 text-blue-400"></i> <span
+                                        class="font-bold text-sm">Twitter/X</span>
+                                </a>
+                                <a href="https://linkedin.com/in/muhammad-waqas" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="group flex items-center gap-3 bg-white/5 hover:bg-blue-600/10 border border-white/10 hover:border-blue-600/50 px-5 py-3 rounded-xl transition-all w-[calc(50%-0.5rem)] sm:w-auto text-white/70 hover:text-white"
+                                    aria-label="LinkedIn">
+                                    <i data-lucide="linkedin" class="w-5 h-5 text-blue-600"></i> <span
+                                        class="font-bold text-sm">LinkedIn</span>
+                                </a>
+                                <a href="https://instagram.com/WaqasAIWorld" target="_blank" rel="noopener noreferrer"
+                                    class="group flex items-center gap-3 bg-white/5 hover:bg-pink-500/10 border border-white/10 hover:border-pink-500/50 px-5 py-3 rounded-xl transition-all w-[calc(50%-0.5rem)] sm:w-auto text-white/70 hover:text-white"
+                                    aria-label="Instagram">
+                                    <i data-lucide="instagram" class="w-5 h-5 text-pink-500"></i> <span
+                                        class="font-bold text-sm">Instagram</span>
+                                </a>
+                                <a href="https://github.com/WaqasAIWorld" target="_blank" rel="noopener noreferrer"
+                                    class="group flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/50 px-5 py-3 rounded-xl transition-all w-[calc(50%-0.5rem)] sm:w-auto text-white/70 hover:text-white"
+                                    aria-label="GitHub">
+                                    <i data-lucide="github" class="w-5 h-5 text-white"></i> <span
+                                        class="font-bold text-sm">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-sans font-black text-3xl text-white mb-3">Quick Answers</h3>
+                            <div class="space-y-4">
+                                <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+                                    <h4 class="font-bold text-white mb-2 flex items-center gap-2"><i data-lucide="clock"
+                                            class="w-4 h-4 text-accent"></i> Response Time?</h4>
+                                    <p class="text-sm text-white/50 text-justify">We typically respond to all corporate
+                                        and
+                                        general inquiries within 12-24 business hours.</p>
+                                </div>
+                                <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+                                    <h4 class="font-bold text-white mb-2 flex items-center gap-2"><i data-lucide="globe"
+                                            class="w-4 h-4 text-primary"></i> International Meetings?</h4>
+                                    <p class="text-sm text-white/50 text-justify">Yes, our team operates completely
+                                        remotely
+                                        and is available for Google Meet synchronizations in most time zones.</p>
+                                </div>
+                                <div class="bg-white/5 border border-white/10 rounded-xl p-6">
+                                    <h4 class="font-bold text-white mb-2 flex items-center gap-2"><i
+                                            data-lucide="shield" class="w-4 h-4 text-green-400"></i> Partnership
+                                        Programs?</h4>
+                                    <p class="text-sm text-white/50 text-justify">We are actively seeking tool
+                                        developers
+                                        and AI researchers for joint neural collaborations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="bg-[rgba(8,11,22,1)] text-white rounded-t-[4rem] px-8 pt-20 pb-10 relative overflow-hidden border-t border-white/5 z-10">
+            <div
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-primary/20 rounded-full blur-[100px] pointer-events-none">
+            </div>
+
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                    <div class="lg:col-span-1">
+                        <div
+                            class="flex items-center gap-2 font-sans font-black text-2xl mb-3 tracking-tight text-white">
+                            <i data-lucide="brain-circuit" class="w-8 h-8 text-accent"></i>
+                            Waqas AI World
+                        </div>
+                        <p class="font-sans text-white/50 text-sm font-medium leading-relaxed mb-3">
+                            The absolute power of artificial intelligence, localized. We architect premium neural
+                            deployments for those who demand the highest degree of intelligence.
+                        </p>
+                        <div class="flex gap-3 flex-wrap">
+                            <a href="https://youtube.com/@WaqasAIWorld" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10 hover:border-red-500 hover:text-red-500"
+                                aria-label="YouTube"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+                            <a href="https://twitter.com/WaqasAIWorld" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10 hover:border-blue-400 hover:text-blue-400"
+                                aria-label="Twitter"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                            <a href="https://linkedin.com/in/muhammad-waqas" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10 hover:border-blue-600 hover:text-blue-600"
+                                aria-label="LinkedIn"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                            <a href="https://instagram.com/WaqasAIWorld" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10 hover:border-pink-500 hover:text-pink-500"
+                                aria-label="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                            <a href="https://github.com/WaqasAIWorld" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10 hover:border-white hover:text-white"
+                                aria-label="GitHub"><i data-lucide="github" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-data text-white/40 font-bold tracking-widest text-sm mb-3">PLATFORM</h4>
+                        <ul class="space-y-3 font-sans text-white/80 font-medium text-sm">
+                            <li><a href="#about" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                                        data-lucide="arrow-right" class="w-3 h-3 text-primary"></i> Philosophy</a></li>
+                            <li><a href="#tools" class="hover:text-primary transition-colors flex items-center gap-2"><i
+                                        data-lucide="arrow-right" class="w-3 h-3 text-primary"></i> Interative
+                                    Ecosystem</a>
+                            </li>
+                            <li><a href="#roadmap"
+                                    class="hover:text-primary transition-colors flex items-center gap-2"><i
+                                        data-lucide="arrow-right" class="w-3 h-3 text-primary"></i> Learning Roadmap</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-data text-white/40 font-bold tracking-widest text-sm mb-3">LATEST AI NEWS</h4>
+                        <ul class="space-y-4 font-sans text-white/80 font-medium text-sm">
+                            <li><a href="#news" class="hover:text-secondary transition-colors block leading-tight">GPT-5
+                                    Release Date Predictions & Rumors for late 2025.</a></li>
+                            <li><a href="#news" class="hover:text-secondary transition-colors block leading-tight">How
+                                    Gemini 1.5 Pro performs on a million tokens.</a></li>
+                            <li><a href="#news"
+                                    class="hover:text-secondary transition-colors block leading-tight">RunwayML
+                                    introduces Gen-3 text-to-video realistic synthesis.</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-data text-white/40 font-bold tracking-widest text-sm mb-3">QUICK SUBSCRIBE</h4>
+                        <p class="text-xs text-white/50 mb-3">Get the latest AI updates instantly.</p>
+                        <form
+                            class="flex border border-white/20 rounded-full overflow-hidden bg-black/40 hover:border-accent transition-colors">
+                            <input type="email" placeholder="Your email..." required
+                                class="bg-transparent text-white text-sm px-4 py-2 w-full focus:outline-none placeholder:text-white/30" />
+                            <button type="submit"
+                                class="bg-white/10 hover:bg-accent hover:text-black transition-colors px-4 py-2 text-white"><i
+                                    data-lucide="send" class="w-4 h-4"></i></button>
+                        </form>
+                        <h4 class="font-data text-white/40 font-bold tracking-widest text-sm mb-3 mt-6">CONTACT</h4>
+                        <ul class="space-y-2 font-sans text-white/80 font-medium text-sm break-all">
+                            <li><a href="mailto:mwaqas5401@gmail.com"
+                                    class="hover:text-primary transition-colors">mwaqas5491@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="font-data text-xs tracking-widest font-bold text-white/50 flex items-center gap-3">
+                        ALL SYSTEMS NOMINAL
+                    </div>
+                    <div class="flex gap-4 text-xs font-semibold text-white/30">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-white transition-colors">Sitemap</a>
+                    </div>
+                    <div class="font-sans text-sm font-semibold text-white/30">
+                        &copy; <span id="year">2026</span> Muhammad Waqas AI World. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Executable Logic -->
+        <script>
+            lucide.createIcons();
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Core Init
+            const hideLoader = () => {
+                const loader = document.getElementById('loader');
+                if (!loader || loader.style.display === 'none') return;
+                loader.classList.add('fade');
+                setTimeout(() => { loader.style.display = 'none'; }, 800);
+            };
+            window.addEventListener('load', hideLoader);
+            setTimeout(hideLoader, 1500); // Failsafe timeout in case of slow network
+
+            // Search Overlay
+            const searchBtn = document.getElementById('search-btn');
+            const searchOverlay = document.getElementById('search-overlay');
+            const searchClose = document.getElementById('search-close');
+            searchBtn.addEventListener('click', () => { searchOverlay.classList.remove('hidden'); document.getElementById('search-input').focus(); });
+            searchClose.addEventListener('click', () => searchOverlay.classList.add('hidden'));
+
+            // Progress bar
+            window.addEventListener('scroll', () => {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                document.getElementById('read-progress').style.width = ((winScroll / height) * 100) + '%';
+            });
+
+            // Back to top
+            const backTopBtn = document.getElementById('back-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) backTopBtn.classList.add('visible');
+                else backTopBtn.classList.remove('visible');
+            });
+
+            // Cookie banner
+            const cookieBanner = document.getElementById('cookie-banner');
+            if (!localStorage.getItem('cookieConsent')) setTimeout(() => cookieBanner.classList.add('show'), 2000);
+            function acceptCookies() { localStorage.setItem('cookieConsent', 'accepted'); cookieBanner.classList.remove('show'); }
+            function declineCookies() { localStorage.setItem('cookieConsent', 'declined'); cookieBanner.classList.remove('show'); }
+
+            // Navbar & Mobile Menu Control
+            const navbar = document.getElementById('navbar');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            let isMenuOpen = false;
+
+            menuBtn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+                mobileMenu.classList.toggle('active');
+                menuBtn.innerHTML = isMenuOpen ? '<i data-lucide="x" class="w-6 h-6"></i>' : '<i data-lucide="menu" class="w-6 h-6"></i>';
+                document.body.classList.toggle('menu-open', isMenuOpen);
+                lucide.createIcons();
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    isMenuOpen = false;
+                    mobileMenu.classList.remove('active');
+                    menuBtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+                    document.body.classList.remove('menu-open');
+                    lucide.createIcons();
+                    const targetId = link.getAttribute('href');
+                    if (targetId !== '#') {
+                        setTimeout(() => {
+                            document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+                        }, 400);
+                    }
+                });
+            });
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('nav-scrolled');
+                    navbar.classList.remove('top-4', 'md:top-6', 'max-w-6xl', 'rounded-[3rem]', 'border', 'backdrop-blur-md');
+                } else {
+                    navbar.classList.remove('nav-scrolled');
+                    navbar.classList.add('top-4', 'md:top-6', 'max-w-6xl', 'rounded-[3rem]', 'border', 'backdrop-blur-md');
+                }
+
+                // Trigger Stats Counter
+                if (!window.statsDone && window.scrollY > 200) {
+                    gsap.utils.toArray('.counter').forEach(el => {
+                        const tar = parseFloat(el.getAttribute('data-target'));
+                        const isDec = tar % 1 !== 0;
+                        gsap.to(el, { innerHTML: tar, duration: 2, ease: "power2.out", onUpdate: function () { el.innerHTML = Number(el.innerHTML).toFixed(isDec ? 1 : 0); } });
+                    });
+                    window.statsDone = true;
+                }
+            });
+
+            // Data for Grid
+            const toolsData = [
+                { id: 1, name: "ChatGPT 4", category: "logic", icon: "message-square", color: "text-primary", rating: 4.9, badge: "Freemium", desc: "Advanced reasoning and natural language processing.", feature: "Voice mode active", url: "https://chat.openai.com" },
+                { id: 2, name: "Midjourney v6", category: "vision", icon: "image", color: "text-secondary", rating: 4.8, badge: "Paid", desc: "Photorealistic AI image synthesis.", feature: "V6 hyper-realism", url: "https://midjourney.com" },
+                { id: 3, name: "GitHub Copilot", category: "code", icon: "code", color: "text-accent", rating: 4.9, badge: "Paid", desc: "AI pair programmer directly in your IDE.", feature: "Inline chat UI", url: "https://github.com/features/copilot" },
+                { id: 4, name: "Claude 3.5 Sonnet", category: "logic", icon: "cpu", color: "text-blue-500", rating: 4.8, badge: "Freemium", desc: "Anthropic's fastest cognitive engine.", feature: "200k context window", url: "https://claude.ai" },
+                { id: 5, name: "Sora AI", category: "vision", icon: "video", color: "text-pink-500", rating: 4.9, badge: "Enterprise", desc: "Generates realistic 60s video from text.", feature: "Physics simulation", url: "https://sora.com" },
+                { id: 6, name: "Perplexity", category: "logic", icon: "search", color: "text-cyan-500", rating: 4.7, badge: "Freemium", desc: "AI-powered real-time discovery engine.", feature: "Live web citations", url: "https://perplexity.ai" },
+                { id: 7, name: "Google Gemini", category: "logic", icon: "zap", color: "text-blue-400", rating: 4.8, badge: "Freemium", desc: "Google's most capable and general AI model.", feature: "Multimodal native", url: "https://gemini.google.com" },
+                { id: 8, name: "DALL-E 3", category: "vision", icon: "image", color: "text-green-500", rating: 4.6, badge: "Paid", desc: "Translates precise text to detailed images.", feature: "Native ChatGPT integration", url: "https://openai.com/dall-e-3" },
+                { id: 9, name: "ElevenLabs", category: "audio", icon: "mic", color: "text-orange-500", rating: 4.9, badge: "Freemium", desc: "The most realistic AI voice generator and TTS.", feature: "Voice cloning", url: "https://elevenlabs.io" },
+                { id: 10, name: "Runway ML", category: "vision", icon: "film", color: "text-purple-400", rating: 4.8, badge: "Paid", desc: "State-of-the-art Gen-3 video platform.", feature: "Motion brush", url: "https://runwayml.com" },
+                { id: 11, name: "Notion AI", category: "logic", icon: "book", color: "text-indigo-400", rating: 4.5, badge: "Paid", desc: "Writing assistant integrated directly into workspaces.", feature: "Magic auto-fill", url: "https://notion.so" },
+                { id: 12, name: "Synthesia", category: "vision", icon: "monitor-play", color: "text-red-400", rating: 4.7, badge: "Paid", desc: "Create professional AI video avatars from text.", feature: "160+ AI avatars", url: "https://synthesia.io" }
+            ];
+
+            const toolsGrid = document.getElementById('tools-grid-cont');
+            function renderTools(filter = 'all') {
+                toolsGrid.innerHTML = '';
+                const filtered = filter === 'all' ? toolsData : toolsData.filter(t => t.category === filter);
+
+                filtered.forEach((tool, index) => {
+                    const delay = index * 50;
+                    toolsGrid.innerHTML += `
+                    <div class="glass-panel p-3 sm:p-4 rounded-[2rem] group hover:-translate-y-2 transition-all duration-300 border hover:border-[rgba(255,255,255,0.15)] bg-gradient-to-b from-[rgba(255,255,255,0.03)] opacity-0 tool-card relative" style="animation: fadeInUp 0.5s ease forwards ${delay}ms;">
+                        <!-- Tooltip -->
+                        <div class="tool-tooltip font-data uppercase tracking-widest text-xs text-white">Feature: <span class="text-accent">${tool.feature}</span></div>
+                        
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-16 h-16 rounded-full bg-[rgba(0,0,0,0.4)] border border-white/5 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 shadow-xl relative overflow-hidden">
+                                <i data-lucide="${tool.icon}" class="w-7 h-7 ${tool.color} relative z-10"></i>
+                            </div>
+                            <div class="flex flex-col items-end gap-2">
+                                <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full font-sans font-bold text-xs uppercase text-white/70">${tool.badge}</span>
+                                <span class="flex items-center gap-1 text-xs text-yellow-500 font-bold"><i data-lucide="star" class="w-3 h-3" fill="currentColor"></i> ${tool.rating}</span>
+                            </div>
+                        </div>
+                        <h3 class="font-sans font-black text-2xl text-white mb-2 tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/50 transition-all">${tool.name}</h3>
+                        <p class="font-sans text-white/50 text-sm mb-4 leading-relaxed font-medium line-clamp-2">${tool.desc}</p>
+                        <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl border border-white/10 font-sans font-bold text-sm text-white flex items-center justify-center gap-2 hover:bg-white hover:text-black hover:border-white transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.05)] mt-auto block text-center">
+                            Access Node <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                `;
+                });
+                lucide.createIcons();
+            }
+
+            window.filterData = function (cat) {
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('active');
+                    if ((b.innerText.toLowerCase().includes(cat.toLowerCase())) || (cat === 'all' && b.innerText === 'All Nodes')) b.classList.add('active');
+                });
+                renderTools(cat);
+            };
+            renderTools('all');
+
+            // Blog
+            const blogGrid = document.getElementById('blog-grid');
+            if (blogGrid) {
+                const blogs = [
+                    {
+                        tag: "Architecture", date: "FEB 24, 2026", title: "Synthesizing Neural Networks into Modern UI Design", img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000",
+                        content: `<h2 class="text-3xl font-bold text-white mb-4">Synthesizing Neural Networks into UI Design</h2><p class="text-white/70 mb-4">When we look at the intersection of AI intelligence and aesthetic UI development, it becomes apparent that the traditional layout boundaries are shifting natively alongside dynamic content streams. In 2026, the UI is no longer static; it predicts user workflow and adjusts topography accordingly.</p><p class="text-white/70 mb-4">Consider predictive navigation. Using lightweight LLM logic processing in the browser, interfaces now dynamically adapt button positioning. For example, replacing heavy modal interactions with continuous canvas feedback driven by AI.</p>`
+                    },
+                    {
+                        tag: "Logic Core", date: "FEB 22, 2026", title: "The Next Evolution: Predictive Language Models", img: "https://images.unsplash.com/photo-1620712948343-00842a5bb049?q=80&w=1000",
+                        content: `<h2 class="text-3xl font-bold text-white mb-4">Predictive Language Models Evolution</h2><p class="text-white/70">The transition from merely answering prompts to proactively executing multi-step agentic workflows represents the true utility of modern LLMs. Models now spin up sub-agents to verify math, check visual accuracy, and execute external queries sequentially. This shift vastly improves reliability while completely obfuscating the underlying computational complexity from the end user.</p>`
+                    },
+                    {
+                        tag: "Cognitive", date: "FEB 18, 2026", title: "Optimizing Hardware for Generative Outputs", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000",
+                        content: `<h2 class="text-3xl font-bold text-white mb-4">Hardware Optimization for Generative AI</h2><p class="text-white/70">Generative synthesis requires massive tensor core throughput. Local execution of 7B variable models has become commonplace on consumer hardware, leading to a revolution in "on-device AI." Apple's Neural Engine and specialized AI-PCs by Snapdragon are changing how we process privacy-first AI without compromising bandwidth constraints.</p>`
+                    },
+                    {
+                        tag: "Tools", date: "MAR 01, 2026", title: "Top 10 Free AI Tools You Must Try in 2025", img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1000",
+                        content: `<h2 class="text-3xl font-bold text-white mb-4">Top 10 Free AI Tools</h2><p class="text-white/70">Finding a robust set of free AI tools is critical. This roundup explores Gemini's multimodal free tier, Claude's incredibly fast logical reasoning, and several open-source generative platforms that empower users to build applications locally without any API costs.</p>`
+                    },
+                    {
+                        tag: "Innovation", date: "MAR 05, 2026", title: "How Generative AI is Reshaping Creative Industries", img: "https://images.unsplash.com/photo-1542435503-956c26607cad?q=80&w=1000",
+                        content: `<h2 class="text-3xl font-bold text-white mb-4">Generative AI in Creatives</h2><p class="text-white/70">From Hollywood film sets augmenting background plates with Sora to Spotify musicians leveraging AI mastering tools, the creative landscape is in metamorphosis. It elevates independent producers to the level of massive studios, allowing a single vision to be realized flawlessly.</p>`
+                    },
+                    {
+                        tag: "Local Intel", date: "MAR 08, 2026", title: "Pakistan's AI Revolution: What You Need to Know", img: "https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=1000",
+                        content: `<h2 class="text-3xl font-bold text-white mb-4">Pakistan's AI Revolution</h2><p class="text-white/70">Driven by a massive young engineering demographic, Pakistan is experiencing a rapid adoption of AI developer tools. From widespread if GitHub Copilot in major software houses in Lahore and Karachi to national AI initiatives pushing data science literacy at the school level, the momentum is undeniable.</p>`
+                    }
+                ];
+
+                blogGrid.innerHTML = '';
+                blogs.forEach((blog) => {
+                    blogGrid.innerHTML += `
+                    <div class="glass-panel p-4 rounded-3xl group hover:-translate-y-2 transition-all duration-300">
+                        <div class="relative w-full h-[250px] rounded-2xl overflow-hidden mb-3">
+                            <img src="${blog.img}" loading="lazy" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" alt="Blog Image"/>
+                            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#080B16] to-transparent pointer-events-none"></div>
+                            <div class="absolute top-4 left-4 border border-white/20 bg-black/40 backdrop-blur-md font-data text-[10px] tracking-widest px-3 py-1 text-white rounded-full uppercase">${blog.tag}</div>
+                        </div>
+                        <div class="px-2">
+                            <p class="text-xs font-sans text-white/40 font-bold mb-3 tracking-wider uppercase">${blog.date}</p>
+                            <h3 class="font-sans font-black text-2xl text-white mb-4 line-clamp-2 leading-snug group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/50 transition-colors">${blog.title}</h3>
+                            <button onclick='openBlogModal(${JSON.stringify(blog).replace(/'/g, "&#39;")})' class="text-accent hover:text-white font-sans font-bold text-sm tracking-wide uppercase transition-colorsems-center gap-2">Read Decrypted File <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+                        </div>
+            </div>
+                `;
+                });
+            }
+
+            const blogModal = document.getElementById('blog-modal');
+            const modalBody = document.getElementById('modal-body');
+
+            window.openBlogModal = function (blogData) {
+                modalBody.innerHTML = `
+                <div class="relative w-full h-48 rounded-xl overflow-hidden mb-3">
+                    <img src="${blogData.img}" class="w-full h-full object-cover">
+                    <div class="absolute top-4 left-4 border border-white/20 bg-black/40 backdrop-blur-md px-3 py-1 text-white text-xs uppercase rounded-full font-bold">${blogData.tag}</div>
+                </div>
+                ${blogData.content}
+            `;
+                blogModal.classList.add('active');
+                lucide.createIcons();
+                document.body.style.overflow = 'hidden';
+            };
+
+            const mClose = document.getElementById('modal-close');
+            if (mClose) {
+                mClose.addEventListener('click', () => {
+                    blogModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+
+            // FAQ Data
+            const faqCont = document.querySelector('.faq-container');
+            if (faqCont) {
+                const faqs = [
+                    { q: 'Is Muhammad Waqas AI World completely free?', a: 'Yes! All our tool reviews, news articles, and basic tutorials are 100% free to access. We believe in democratizing AI knowledge for everyone in Pakistan and globally.' },
+                    { q: 'How frequently are parameters recalibrated?', a: 'We review and update our AI tracking nodes daily. The AI landscape moves fast, and we ensure our telemetry reflects the absolute latest technology.' },
+                    { q: 'Can logic clusters be processed offline?', a: 'Most large language models run in the cloud via API. Only local architecture solutions like LLaMA models support true offline data. Our platform directs you to the optimal solutions.' },
+                    { q: 'What AI tools does Muhammad Waqas recommend for beginners?', a: 'ChatGPT and Google Gemini are best starting points due to their intuitive conversational interfaces and broad contextual knowledge bases.' },
+                    { q: 'Is this website related to any Pakistani AI initiative?', a: 'Yes, Waqas AI World is Pakistan\'s first dedicated independent AI education platform designed to bring Silicon Valley-level ML literacy to Southeast Asia.' },
+                    { q: 'Can I contribute articles or tool reviews?', a: 'Yes! We welcome contributions. Reach out via our Contact page to discuss editorial guidelines and neural submissions.' },
+                    { q: 'How is this different from other AI websites?', a: 'Unlike general tech sites, we focus purely on deep AI mechanics, offering 1:1 actionable implementations rather than generic press releases.' },
+                    { q: 'What is the future roadmap of this platform?', a: 'We plan to launch a full learning management system featuring hands-on logic building environments and direct API sandboxes in Q4 2026.' }
+                ];
+                faqs.forEach((f) => {
+                    faqCont.innerHTML += `
+                    <div class="faq-item group">
+                        <button class="faq-btn">
+                            <span>${f.q}</span>
+                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent group-[.active]:text-secondary"></i>
+                        </button>
+                        <div class="faq-content"><p class="text-sm pb-2 leading-relaxed font-medium">${f.a}</p></div>
+                    </div>
+                `;
+                });
+                document.querySelectorAll('.faq-btn').forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        const p = this.parentElement;
+                        const iA = p.classList.contains('active');
+                        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                        if (!iA) p.classList.add('active');
+                    });
+                });
+                lucide.createIcons();
+            }
+            lucide.createIcons();
+
+            // GSAP Animations
+            gsap.from('.hero-elem', { y: 80, opacity: 0, stagger: 0.15, duration: 1.5, ease: 'power4.out', delay: 0.2 });
+            gsap.utils.toArray('.gsap-title').forEach(t => { gsap.from(t, { scrollTrigger: { trigger: t, start: 'top 85%' }, y: 40, opacity: 0, duration: 1.2, ease: 'power3.out' }); });
+            gsap.utils.toArray('.gsap-about').forEach(t => { gsap.from(t, { scrollTrigger: { trigger: t, start: 'top 80%' }, y: 50, opacity: 0, stagger: 0.2, duration: 1.2, ease: 'power3.out' }); });
+
+            // Artifact 1: Diagnostic Shuffler
+            const shufflerData = [{ t: 'ChatGPT Architecture', s: 'Parameters: 1.7T' }, { t: 'Meta AI LLaMA 3', s: 'Open-Source Mode Active' }, { t: 'Claude Opus Pipeline', s: 'Context: 200k Tokens' }, { t: 'DeepSeek Logic', s: 'Programming Array' }];
+            let aC = [...shufflerData];
+            const sC = document.getElementById('shuffler-container');
+            function rS() {
+                sC.innerHTML = '';
+                aC.slice(0, 3).forEach((c, i) => {
+                    const el = document.createElement('div');
+                    el.className = 'absolute bottom-0 w-[90%] bg-[rgba(15,20,35,0.95)] border border-white/10 rounded-[1.5rem] p-2 flex justify-between items-center transition-all duration-1000 shadow-[0_10px_30px_rgba(0,0,0,0.5)]';
+                    el.style.transform = `translateY(${i * -20}px) scale(${1 - (i * 0.05)})`;
+                    el.style.zIndex = 10 - i; el.style.opacity = 1 - (i * 0.3);
+                    el.innerHTML = `<div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 text-primary"><i data-lucide="cpu" class="w-4 h-4"></i></div><div class="flex flex-col"><span class="font-sans font-bold text-sm text-white">${c.t}</span><span class="font-data text-white/50 text-[10px] tracking-widest mt-1">${c.s}</span></div></div>`;
+                    sC.appendChild(el);
+                });
+                lucide.createIcons();
+            }
+            rS(); setInterval(() => { aC.unshift(aC.pop()); rS(); }, 3000);
+
+            // Artifact 2: Telemetry Typewriter
+            const fT = `AUTHENTICATING CONNECTION...
+> VERIFYING NEURAL PATHWAYS
+> CHATGPT INSTANCE: ACTIVE [1.7T]
+> CLAUDE CONTEXT: SYNCHRONIZED
+> META AI: LIVE STREAM ENABLED
+> DEEPSEEK: LOGIC CACHED
+> LATENCY: 0.04ms
+
+> READY FOR PROMPT IMPLANTATION.`;
+            const tE = document.getElementById('typewriter-text');
+            let tI = 0;
+            ScrollTrigger.create({
+                trigger: tE, start: "top 85%", once: true,
+                onEnter: () => {
+                    let inter = setInterval(() => {
+                        if (tI < fT.length) { tE.innerHTML += fT.charAt(tI) === '\n' ? '<br>' : fT.charAt(tI); tI++; }
+                        else clearInterval(inter);
+                    }, 40);
+                }
+            });
+
+            // Artifact 3: Timeline Matrix
+            const cTl = gsap.timeline({ repeat: -1, repeatDelay: 1.5, paused: true });
+            cTl.fromTo('.cursor-svg', { x: -50, y: 150, opacity: 0 }, { x: 55, y: -25, opacity: 1, duration: 1, ease: 'power2.inOut' })
+                .to('.cursor-svg', { scale: 0.9, duration: 0.1 }).to('.day-cell-target', { backgroundColor: '#E11D48', borderColor: '#E11D48', color: '#FFF', duration: 0.1 })
+                .to('.cursor-svg', { scale: 1, duration: 0.1 }).to('.cursor-svg', { x: 200, y: 70, duration: 0.8, ease: 'power2.inOut' })
+                .to('.cursor-svg', { scale: 0.9, duration: 0.1 }).to('.save-btn', { scale: 0.95, duration: 0.1 })
+                .to('.save-btn', { scale: 1, backgroundColor: '#E11D48', color: '#FFF', borderColor: '#E11D48', duration: 0.1 })
+                .to('.cursor-svg', { scale: 1, duration: 0.1 }).to('.cursor-svg', { x: 300, y: 150, opacity: 0, duration: 0.8, ease: 'power2.inOut' })
+                .set('.day-cell-target', { backgroundColor: 'rgba(255,255,255,0.05)', borderColor: 'rgba(255,255,255,0.2)' })
+                .set('.save-btn', { backgroundColor: 'transparent', color: '#E11D48', borderColor: '#E11D48' });
+            ScrollTrigger.create({ trigger: '.cursor-svg', start: 'top 80%', onEnter: () => cTl.play() });
+
+            // Contact Fix Validations
+            const cForm = document.getElementById('accessForm');
+            const sBtn = document.getElementById('submitBtn');
+            const sSt = document.getElementById('successState');
+            const f1 = document.getElementById('fname'), e1 = document.getElementById('fname-err');
+            const f2 = document.getElementById('femail'), e2 = document.getElementById('femail-err');
+            const f3 = document.getElementById('fmsg'), e3 = document.getElementById('fmsg-err');
+            const fpriv = document.getElementById('fprivacy'), epriv = document.getElementById('fprivacy-err');
+
+            if (sBtn && cForm) {
+                // Set _next so FormSubmit redirects back to this page after sending
+                const nextInput = document.createElement('input');
+                nextInput.type = 'hidden';
+                nextInput.name = '_next';
+                nextInput.value = window.location.href;
+                cForm.appendChild(nextInput);
+
+                sBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    let v = true;
+                    if (!f1 || !f1.value.trim()) { if (e1) e1.classList.remove('hidden'); v = false; if (f1) f1.style.borderColor = '#E11D48'; } else { if (e1) e1.classList.add('hidden'); if (f1) f1.style.borderColor = '#7C3AED'; }
+                    if (!f2 || !f2.value.trim() || !f2.value.includes('@')) { if (e2) e2.classList.remove('hidden'); v = false; if (f2) f2.style.borderColor = '#E11D48'; } else { if (e2) e2.classList.add('hidden'); if (f2) f2.style.borderColor = '#7C3AED'; }
+                    if (!f3 || !f3.value.trim() || f3.value.length < 20) { if (e3) e3.classList.remove('hidden'); v = false; if (f3) f3.style.borderColor = '#E11D48'; } else { if (e3) e3.classList.add('hidden'); if (f3) f3.style.borderColor = '#7C3AED'; }
+                    if (fpriv && !fpriv.checked) { if (epriv) epriv.classList.remove('hidden'); v = false; } else { if (epriv) epriv.classList.add('hidden'); }
+
+                    if (v) {
+                        const btnText = document.querySelector('.btn-text');
+                        if (btnText) btnText.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Sending...';
+                        if (window.lucide) window.lucide.createIcons();
+                        // Submit the form natively — real POST to FormSubmit.co
+                        setTimeout(() => cForm.submit(), 600);
+                    }
+                });
+
+                cForm.querySelectorAll('input, select, textarea').forEach(el => {
+                    el.addEventListener('input', () => {
+                        const err = document.getElementById(el.id + '-err');
+                        if (el.type !== 'checkbox' && el.id !== 'fphone' && el.id !== 'fsubject') {
+                            if (!el.value.trim() || (el.id === 'fmsg' && el.value.length < 20)) {
+                                el.style.borderColor = '#E11D48';
+                                if (err) err.classList.remove('hidden');
+                            } else {
+                                el.style.borderColor = '#7C3AED';
+                                if (err) err.classList.add('hidden');
+                            }
+                        } else if (el.type === 'checkbox') {
+                            if (err && el.checked) err.classList.add('hidden');
+                        }
+                    });
+                });
+            }
+
+            // --- SEARCH FUNCTIONALITY FIX ---
+            const searchBtn2 = document.getElementById('search-btn');
+            const mobileSearchBtn2 = document.getElementById('mobile-search-btn');
+            const searchOverlay2 = document.getElementById('search-overlay');
+            const searchClose2 = document.getElementById('search-close');
+            const searchInput2 = document.getElementById('search-input');
+            const searchResults2 = document.getElementById('search-results');
+
+            function openSearch() {
+                if (searchOverlay2) {
+                    searchOverlay2.classList.remove('hidden');
+                    setTimeout(() => searchInput2 && searchInput2.focus(), 100);
+                }
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu && mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                }
+            }
+
+            function closeSearch() {
+                if (searchOverlay2) searchOverlay2.classList.add('hidden');
+                if (searchInput2) searchInput2.value = '';
+                if (searchResults2) searchResults2.innerHTML = '';
+            }
+
+            if (searchBtn2) searchBtn2.addEventListener('click', openSearch);
+            if (mobileSearchBtn2) mobileSearchBtn2.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Close mobile menu first
+                const mmenu = document.getElementById('mobile-menu');
+                const mbtn = document.getElementById('menu-btn');
+                if (mmenu) mmenu.classList.remove('active');
+                if (mbtn) mbtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+                document.body.classList.remove('menu-open');
+                if (window.lucide) lucide.createIcons();
+                // Then open search after menu animation completes
+                setTimeout(openSearch, 350);
+            });
+            if (searchClose2) searchClose2.addEventListener('click', closeSearch);
+
+            if (searchInput2) {
+                searchInput2.addEventListener('input', (e) => {
+                    const val = e.target.value.toLowerCase();
+                    if (val.length < 2) {
+                        if (searchResults2) searchResults2.innerHTML = '';
+                        return;
+                    }
+                    // Simulate search logic
+                    const pages = ['About AI', 'Machine Learning Basics', 'How to use ChatGPT', 'AI Ecosystem Tools', 'Contact Support', 'Deep Learning Guide'];
+                    let hits = pages.filter(p => p.toLowerCase().includes(val));
+
+                    if (hits.length > 0) {
+                        searchResults2.innerHTML = hits.map(hit => `
+                        <div class="bg-white/5 border border-white/10 p-3 rounded-lg hover:bg-white/10 cursor-pointer text-white flex justify-between items-center transition-colors">
+                            <span>${hit}</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 text-accent"></i>
+                        </div>
+                    `).join('');
+                    } else {
+                        searchResults2.innerHTML = `<div class="text-white/50 p-3 text-center">No neural pathways found for "${val}"</div>`;
+                    }
+                    if (window.lucide) window.lucide.createIcons();
+                });
+            }
+
+            // Hub Tabs Logic
+            const ai_tabs = document.querySelectorAll('.ai-tab');
+            const ai_contents_dom = document.querySelectorAll('.ai-tab-content');
+            ai_tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    ai_tabs.forEach(t => t.classList.remove('active'));
+                    ai_contents_dom.forEach(c => c.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    const targetId = 'tab-' + tab.dataset.tab;
+                    const activeCont = document.getElementById(targetId);
+                    if (activeCont) activeCont.classList.add('active');
+                });
+            });
+
+            // Typing Effect Hero
+            const animated_texts = ["Explore AI Tools...", "Read AI News...", "Learn AI Tutorials...", "Join AI Community..."];
+            let txtIndex = 0;
+            let cIndex = 0;
+            let _isDeleting = false;
+            const typingElDom = document.getElementById('typing-text');
+
+            function _typeText() {
+                if (!typingElDom) return;
+                const currentStr = animated_texts[txtIndex];
+                if (_isDeleting) {
+                    typingElDom.textContent = currentStr.substring(0, cIndex - 1);
+                    cIndex--;
+                } else {
+                    typingElDom.textContent = currentStr.substring(0, cIndex + 1);
+                    cIndex++;
+                }
+
+                let spd = _isDeleting ? 50 : 100;
+
+                if (!_isDeleting && cIndex === currentStr.length) {
+                    spd = 2000; // pause at end
+                    _isDeleting = true;
+                } else if (_isDeleting && cIndex === 0) {
+                    _isDeleting = false;
+                    txtIndex = (txtIndex + 1) % animated_texts.length;
+                    spd = 500;
+                }
+                setTimeout(_typeText, spd);
+            }
+            if (typingElDom) setTimeout(_typeText, 1000);
+
+            // Navbar Active Scroll Link Highlight
+            const sectionScrolls = document.querySelectorAll("section[id]");
+            const navLinksDesk = document.querySelectorAll(".nav-link[href^='#']");
+            const navLinksMob = document.querySelectorAll(".mobile-link[href^='#']");
+
+            const observerOptions = { root: null, rootMargin: "-10% 0px -40% 0px" };
+            const scrollObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute("id");
+                        navLinksDesk.forEach(link => {
+                            link.classList.remove("active-link");
+                            if (link.getAttribute("href") === `#${id}`) link.classList.add("active-link");
+                        });
+                        navLinksMob.forEach(link => {
+                            link.classList.remove("active-link");
+                            if (link.getAttribute("href") === `#${id}`) link.classList.add("active-link");
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sectionScrolls.forEach(section => { if (section) scrollObserver.observe(section); });
+
+            // Newsletter confetti
+            function fireConfetti() {
+                for (let i = 0; i < 50; i++) {
+                    const conf = document.createElement('div');
+                    conf.classList.add('confetti-piece');
+                    conf.style.left = Math.random() * 100 + 'vw';
+                    conf.style.animationDelay = (Math.random() * 2) + 's';
+                    conf.style.backgroundColor = ['#7C3AED', '#06B6D4', '#E11D48', '#FFD700'][Math.floor(Math.random() * 4)];
+                    document.body.appendChild(conf);
+                    setTimeout(() => conf.remove(), 4000);
+                }
+            }
+            const newsForm = document.getElementById('newsletter-form');
+            if (newsForm) {
+                newsForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const emailVal = document.getElementById('news-email').value.trim();
+                    if (!emailVal) return;
+
+                    const submitBtn = newsForm.querySelector('button[type="submit"]');
+                    if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Subscribing...'; }
+
+                    const fd = new FormData();
+                    fd.append('email', emailVal);
+                    fd.append('subject', 'New Newsletter Subscriber - Waqas AI World');
+                    fd.append('message', 'New subscriber email: ' + emailVal);
+                    fd.append('_captcha', 'false');
+                    fd.append('_template', 'table');
+
+                    fetch('https://formsubmit.co/ajax/mwaqas5491@gmail.com', {
+                        method: 'POST',
+                        body: fd,
+                        headers: { 'Accept': 'application/json' }
+                    })
+                        .then(res => res.json())
+                        .then(() => {
+                            const successEl = document.getElementById('newsletter-success');
+                            if (successEl) {
+                                successEl.classList.remove('hidden');
+                                successEl.classList.add('flex');
+                            }
+                            setTimeout(fireConfetti, 100);
+                        })
+                        .catch(() => {
+                            // Still show success UI even if network fails — also fire confetti
+                            const successEl = document.getElementById('newsletter-success');
+                            if (successEl) { successEl.classList.remove('hidden'); successEl.classList.add('flex'); }
+                            setTimeout(fireConfetti, 100);
+                        });
+                });
+            }
+
+        </script>
+
+        <!-- Blog Modal -->
+        <div id="blog-modal" aria-modal="true" role="dialog">
+            <div class="modal-content">
+                <button id="modal-close"
+                    class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors z-10"
+                    aria-label="Close modal">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+                <div id="modal-body" class="text-white/70 leading-relaxed"></div>
+            </div>
+        </div>
+</body>
+
+</html>
