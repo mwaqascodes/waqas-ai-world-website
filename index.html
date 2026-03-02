@@ -828,6 +828,62 @@
                 transform: translateY(0);
             }
         }
+    
+    /* ===== ANTIGRAVITY EASTER EGG ===== */
+    .antigravity-active * {
+        transition: none !important;
+    }
+    .ag-particle {
+        position: fixed !important;
+        z-index: 99999 !important;
+        pointer-events: none !important;
+        animation: none !important;
+        will-change: transform;
+    }
+    #antigravity-btn {
+        position: fixed;
+        bottom: 6rem;
+        right: 2rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        background: linear-gradient(135deg, #7C3AED, #06B6D4);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 500;
+        border: none;
+        box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+        transition: all 0.3s ease;
+        font-size: 1.4rem;
+    }
+    #antigravity-btn:hover {
+        transform: translateY(-5px) rotate(20deg);
+        box-shadow: 0 0 30px rgba(6, 182, 212, 0.8);
+    }
+    #antigravity-tooltip {
+        position: fixed;
+        bottom: 10.5rem;
+        right: 1rem;
+        background: rgba(8, 11, 22, 0.95);
+        border: 1px solid rgba(6, 182, 212, 0.3);
+        color: rgba(255,255,255,0.8);
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        z-index: 499;
+    }
+    #antigravity-btn:hover + #antigravity-tooltip {
+        opacity: 1;
+    }
+
     </style>
 </head>
 
@@ -1183,7 +1239,7 @@
 
                 <div class="gsap-about relative">
                     <div
-                        class="glass-panel w-full  rounded-[3rem] p-2 relative overflow-hidden flex items-center justify-center">
+                        class="glass-panel w-full rounded-[3rem] p-8 relative overflow-hidden flex items-center justify-center min-h-[420px]">
                         <div class="mw-avatar">MW</div>
                         <div class="absolute inset-0 bg-primary mix-blend-overlay opacity-30"></div>
                         <div
@@ -1297,6 +1353,84 @@
         </div>
     </section>
 
+    <!-- ===== AI KNOWLEDGE HUB ===== -->
+    <section id="ai-hub" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.65)] section-observe">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 gsap-title">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-6 h-[1px] bg-accent"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-accent font-data">Knowledge Hub</span>
+                    <span class="w-6 h-[1px] bg-accent"></span>
+                </div>
+                <h2 class="font-sans font-black text-4xl md:text-5xl text-white mb-4">AI Knowledge <span class="text-gradient">Hub.</span></h2>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="ai-tab active filter-btn" onclick="openTab(event, 'tab-basics')">Basics</button>
+                <button class="ai-tab filter-btn" onclick="openTab(event, 'tab-ml')">Machine Learning</button>
+                <button class="ai-tab filter-btn" onclick="openTab(event, 'tab-dl')">Deep Learning</button>
+                <button class="ai-tab filter-btn" onclick="openTab(event, 'tab-nlp')">NLP</button>
+                <button class="ai-tab filter-btn" onclick="openTab(event, 'tab-cv')">Computer Vision</button>
+                <button class="ai-tab filter-btn" onclick="openTab(event, 'tab-ethics')">AI Ethics</button>
+                <button class="ai-tab filter-btn" onclick="openTab(event, 'tab-future')">Future of AI</button>
+            </div>
+
+            <div class="glass-panel p-8">
+                <div id="tab-basics" class="ai-tab-content active">
+                    <h3 class="text-2xl font-bold text-white mb-4">Basics of AI</h3>
+                    <p class="text-white/70">Artificial Intelligence is the simulation of human intelligence processes by machines.</p>
+                </div>
+                <div id="tab-ml" class="ai-tab-content">
+                    <h3 class="text-2xl font-bold text-white mb-4">Machine Learning</h3>
+                    <p class="text-white/70">Teaching machines to learn from data without explicit programming.</p>
+                </div>
+                <div id="tab-dl" class="ai-tab-content">
+                    <h3 class="text-2xl font-bold text-white mb-4">Deep Learning</h3>
+                    <p class="text-white/70">A subset of ML based on artificial neural networks.</p>
+                </div>
+                <div id="tab-nlp" class="ai-tab-content">
+                    <h3 class="text-2xl font-bold text-white mb-4">Natural Language Processing</h3>
+                    <p class="text-white/70">The ability of a computer program to understand human language.</p>
+                </div>
+                <div id="tab-cv" class="ai-tab-content">
+                    <h3 class="text-2xl font-bold text-white mb-4">Computer Vision</h3>
+                    <p class="text-white/70">How computers can gain high-level understanding from digital images or videos.</p>
+                </div>
+                <div id="tab-ethics" class="ai-tab-content">
+                    <h3 class="text-2xl font-bold text-white mb-4">AI Ethics</h3>
+                    <p class="text-white/70">Moral principles governing the development and use of AI technology.</p>
+                </div>
+                <div id="tab-future" class="ai-tab-content">
+                    <h3 class="text-2xl font-bold text-white mb-4">Future of AI</h3>
+                    <p class="text-white/70">AGI, superintelligence, and the trajectory of technological growth.</p>
+                </div>
+                
+                <div class="mt-12 overflow-x-auto">
+                    <table class="cmp-table w-full">
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Free Tier</th>
+                                <th>Context Window</th>
+                                <th>Image Input</th>
+                                <th>Code Gen</th>
+                                <th>Reasoning</th>
+                                <th>Speed</th>
+                                <th>Best For</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-white/80 text-sm">
+                            <tr><td>ChatGPT</td><td>Yes (GPT-4o mini)</td><td>128k</td><td>Yes</td><td>Excellent</td><td>Very High</td><td>Fast</td><td>General Use</td></tr>
+                            <tr><td>Claude</td><td>Yes (Sonnet 3.5)</td><td>200k</td><td>Yes</td><td>Superior</td><td>Exceptional</td><td>Medium</td><td>Coding / Long Docs</td></tr>
+                            <tr><td>Gemini</td><td>Yes (Gemini 1.5 Flash)</td><td>1M-2M</td><td>Yes</td><td>Good</td><td>High</td><td>Very Fast</td><td>Large File Analysis</td></tr>
+                            <tr><td>Llama 3</td><td>Open Source</td><td>8k-128k</td><td>No</td><td>Good</td><td>Good</td><td>Depends on Host</td><td>Local / Private Deployment</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- original about AI section -->
     <section id="about" class="py-24 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.5)]">
         <div class="max-w-7xl mx-auto px-6">
@@ -1371,7 +1505,7 @@
     <!-- ===== HOW AI WORKS ===== -->
     <section id="how-ai-works" class="py-24 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.7)]">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-3 gsap-title">
+            <div class="text-center mb-12 gsap-title">
                 <div class="inline-flex items-center gap-2 mb-4">
                     <span class="w-6 h-[1px] bg-secondary"></span>
                     <span class="text-xs font-bold tracking-widest uppercase text-secondary font-data">Core
@@ -1423,7 +1557,7 @@
     <!-- ===== AI TOOLS GRID ===== -->
     <section id="tools" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.6)]">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-3 gsap-title">
+            <div class="text-center mb-12 gsap-title">
                 <div class="inline-flex items-center gap-2 mb-4">
                     <span class="w-6 h-[1px] bg-primary"></span>
                     <span class="text-xs font-bold tracking-widest uppercase text-primary font-data">Top AI Tools of
@@ -1435,7 +1569,7 @@
             </div>
 
             <!-- Filter -->
-            <div class="flex flex-wrap items-center justify-center gap-3 mb-3 gsap-title">
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-10 gsap-title">
                 <button class="filter-btn active" onclick="filterData('all')">All Nodes</button>
                 <button class="filter-btn" onclick="filterData('Chatbot')">🤖 Chatbots</button>
                 <button class="filter-btn" onclick="filterData('Image')">🎨 Image Arrays</button>
@@ -1527,7 +1661,7 @@
     <!-- ===== AI INSIGHTS (BLOG) ===== -->
     <section id="news" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.95)]">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-3 gsap-title">
+            <div class="text-center mb-12 gsap-title">
                 <div class="inline-flex items-center gap-2 mb-4">
                     <span class="w-6 h-[1px] bg-secondary"></span>
                     <span class="text-xs font-bold tracking-widest uppercase text-secondary font-data">Latest
@@ -1604,7 +1738,68 @@
             </div>
         </div>
 
-        <!-- ===== ABOUT AI — EXPANDED ===== -->
+        </section>
+
+    
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.6)]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 gsap-title">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-6 h-[1px] bg-primary"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-primary font-data">Testimonials</span>
+                    <span class="w-6 h-[1px] bg-primary"></span>
+                </div>
+                <h2 class="font-sans font-black text-4xl md:text-5xl text-white mb-4">User <span class="text-gradient">Experiences.</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="glass-panel p-8 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-accent mb-4 flex items-center justify-center text-white font-bold text-xl">AK</div>
+                    <div class="flex text-yellow-400 mb-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-white/70 italic mb-4">"This platform transformed how I use AI in my daily workflow..."</p>
+                    <h4 class="text-white font-bold flex items-center gap-1">Ali Kamal <i data-lucide="badge-check" class="w-4 h-4 text-accent"></i></h4>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="glass-panel p-8 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-secondary to-primary mb-4 flex items-center justify-center text-white font-bold text-xl">SF</div>
+                    <div class="flex text-yellow-400 mb-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-white/70 italic mb-4">"The learning roadmap is exactly what I needed to get started with machine learning."</p>
+                    <h4 class="text-white font-bold flex items-center gap-1">Sana Fatima <i data-lucide="badge-check" class="w-4 h-4 text-accent"></i></h4>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="glass-panel p-8 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-accent to-primary mb-4 flex items-center justify-center text-white font-bold text-xl">MR</div>
+                    <div class="flex text-yellow-400 mb-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-white/70 italic mb-4">"Incredible resource for keeping up to date with the rapidly changing AI landscape."</p>
+                    <h4 class="text-white font-bold flex items-center gap-1">M. Rahman <i data-lucide="badge-check" class="w-4 h-4 text-accent"></i></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT AI — EXPANDED ===== -->
         <section id="about-ai"
             class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.85)] section-observe">
             <div class="max-w-7xl mx-auto">
@@ -1992,7 +2187,7 @@
             class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.95)] section-observe">
             <div class="max-w-7xl mx-auto">
                 <!-- Hero Header -->
-                <div class="text-center mb-3 gsap-title">
+                <div class="text-center mb-16 gsap-title">
                     <div class="inline-flex items-center gap-2 mb-4">
                         <span class="text-xs font-bold tracking-widest text-white/50 font-data">Home</span>
                         <i data-lucide="chevron-right" class="w-4 h-4 text-white/30"></i>
@@ -2554,85 +2749,7 @@
             }
 
             // FAQ Data
-            const faqCont = document.querySelector('.faq-container');
-            if (faqCont) {
-                const faqs = [
-                    { q: 'Is Muhammad Waqas AI World completely free?', a: 'Yes! All our tool reviews, news articles, and basic tutorials are 100% free to access. We believe in democratizing AI knowledge for everyone in Pakistan and globally.' },
-                    { q: 'How frequently are parameters recalibrated?', a: 'We review and update our AI tracking nodes daily. The AI landscape moves fast, and we ensure our telemetry reflects the absolute latest technology.' },
-                    { q: 'Can logic clusters be processed offline?', a: 'Most large language models run in the cloud via API. Only local architecture solutions like LLaMA models support true offline data. Our platform directs you to the optimal solutions.' },
-                    { q: 'What AI tools does Muhammad Waqas recommend for beginners?', a: 'ChatGPT and Google Gemini are best starting points due to their intuitive conversational interfaces and broad contextual knowledge bases.' },
-                    { q: 'Is this website related to any Pakistani AI initiative?', a: 'Yes, Waqas AI World is Pakistan\'s first dedicated independent AI education platform designed to bring Silicon Valley-level ML literacy to Southeast Asia.' },
-                    { q: 'Can I contribute articles or tool reviews?', a: 'Yes! We welcome contributions. Reach out via our Contact page to discuss editorial guidelines and neural submissions.' },
-                    { q: 'How is this different from other AI websites?', a: 'Unlike general tech sites, we focus purely on deep AI mechanics, offering 1:1 actionable implementations rather than generic press releases.' },
-                    { q: 'What is the future roadmap of this platform?', a: 'We plan to launch a full learning management system featuring hands-on logic building environments and direct API sandboxes in Q4 2026.' }
-                ];
-                faqs.forEach((f) => {
-                    faqCont.innerHTML += `
-                    <div class="faq-item group">
-                        <button class="faq-btn">
-                            <span>${f.q}</span>
-                            <i data-lucide="plus" class="w-5 h-5 faq-icon text-accent group-[.active]:text-secondary"></i>
-                        </button>
-                        <div class="faq-content"><p class="text-sm pb-2 leading-relaxed font-medium">${f.a}</p></div>
-                    </div>
-                `;
-                });
-                document.querySelectorAll('.faq-btn').forEach(btn => {
-                    btn.addEventListener('click', function () {
-                        const p = this.parentElement;
-                        const iA = p.classList.contains('active');
-                        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-                        if (!iA) p.classList.add('active');
-                    });
-                });
-                lucide.createIcons();
-            }
-            lucide.createIcons();
-
-            // GSAP Animations
-            gsap.from('.hero-elem', { y: 80, opacity: 0, stagger: 0.15, duration: 1.5, ease: 'power4.out', delay: 0.2 });
-            gsap.utils.toArray('.gsap-title').forEach(t => { gsap.from(t, { scrollTrigger: { trigger: t, start: 'top 85%' }, y: 40, opacity: 0, duration: 1.2, ease: 'power3.out' }); });
-            gsap.utils.toArray('.gsap-about').forEach(t => { gsap.from(t, { scrollTrigger: { trigger: t, start: 'top 80%' }, y: 50, opacity: 0, stagger: 0.2, duration: 1.2, ease: 'power3.out' }); });
-
-            // Artifact 1: Diagnostic Shuffler
-            const shufflerData = [{ t: 'ChatGPT Architecture', s: 'Parameters: 1.7T' }, { t: 'Meta AI LLaMA 3', s: 'Open-Source Mode Active' }, { t: 'Claude Opus Pipeline', s: 'Context: 200k Tokens' }, { t: 'DeepSeek Logic', s: 'Programming Array' }];
-            let aC = [...shufflerData];
-            const sC = document.getElementById('shuffler-container');
-            function rS() {
-                sC.innerHTML = '';
-                aC.slice(0, 3).forEach((c, i) => {
-                    const el = document.createElement('div');
-                    el.className = 'absolute bottom-0 w-[90%] bg-[rgba(15,20,35,0.95)] border border-white/10 rounded-[1.5rem] p-2 flex justify-between items-center transition-all duration-1000 shadow-[0_10px_30px_rgba(0,0,0,0.5)]';
-                    el.style.transform = `translateY(${i * -20}px) scale(${1 - (i * 0.05)})`;
-                    el.style.zIndex = 10 - i; el.style.opacity = 1 - (i * 0.3);
-                    el.innerHTML = `<div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 text-primary"><i data-lucide="cpu" class="w-4 h-4"></i></div><div class="flex flex-col"><span class="font-sans font-bold text-sm text-white">${c.t}</span><span class="font-data text-white/50 text-[10px] tracking-widest mt-1">${c.s}</span></div></div>`;
-                    sC.appendChild(el);
-                });
-                lucide.createIcons();
-            }
-            rS(); setInterval(() => { aC.unshift(aC.pop()); rS(); }, 3000);
-
-            // Artifact 2: Telemetry Typewriter
-            const fT = `AUTHENTICATING CONNECTION...
-> VERIFYING NEURAL PATHWAYS
-> CHATGPT INSTANCE: ACTIVE [1.7T]
-> CLAUDE CONTEXT: SYNCHRONIZED
-> META AI: LIVE STREAM ENABLED
-> DEEPSEEK: LOGIC CACHED
-> LATENCY: 0.04ms
-
-> READY FOR PROMPT IMPLANTATION.`;
-            const tE = document.getElementById('typewriter-text');
-            let tI = 0;
-            ScrollTrigger.create({
-                trigger: tE, start: "top 85%", once: true,
-                onEnter: () => {
-                    let inter = setInterval(() => {
-                        if (tI < fT.length) { tE.innerHTML += fT.charAt(tI) === '\n' ? '<br>' : fT.charAt(tI); tI++; }
-                        else clearInterval(inter);
-                    }, 40);
-                }
-            });
+            );
 
             // Artifact 3: Timeline Matrix
             const cTl = gsap.timeline({ repeat: -1, repeatDelay: 1.5, paused: true });
@@ -2899,6 +3016,12 @@
                 <div id="modal-body" class="text-white/70 leading-relaxed"></div>
             </div>
         </div>
+
+    <button id="antigravity-btn" onclick="activateAntigravity()">
+        🚀
+    </button>
+    <div id="antigravity-tooltip">INITIATE ZERO-G</div>
+
 </body>
 
 </html>
