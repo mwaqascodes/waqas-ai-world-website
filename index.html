@@ -1210,8 +1210,7 @@
                     </div>
                     <div class="w-px h-8 bg-white/10"></div>
                     <div class="text-center">
-                        <div class="font-black text-2xl text-white font-sans">Pakistan<span
-                                class="text-primary">#1</span></div>
+                        <div class="font-black text-2xl text-white font-sans">Pakistan <span class="text-primary">#1</span></div>
                         <div class="text-[10px] font-data text-white/40 tracking-widest uppercase mt-1">AI Platform
                         </div>
                     </div>
@@ -1326,7 +1325,7 @@
 
                 <div class="gsap-about relative">
                     <div
-                        class="glass-panel w-full rounded-[3rem] p-8 relative overflow-hidden flex items-center justify-center min-h-[420px]">
+                        class="glass-panel w-full rounded-[3rem] p-10 relative overflow-hidden flex items-center justify-center min-h-[450px]">
                         <div class="mw-avatar">MW</div>
                         <div class="absolute inset-0 bg-primary mix-blend-overlay opacity-30"></div>
                         <div
@@ -2051,6 +2050,159 @@
         </div>
     </section>
 
+    
+    <!-- ===== PAKISTAN AI STATS ===== -->
+    <section id="pakistan-ai" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.7)]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 gsap-title">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-6 h-[1px] bg-green-500"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-green-500 font-data">National Growth</span>
+                    <span class="w-6 h-[1px] bg-green-500"></span>
+                </div>
+                <h2 class="font-sans font-black text-4xl md:text-5xl text-white mb-4">Pakistan's AI <span class="text-gradient">Revolution.</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                <div class="glass-panel p-6 text-center">
+                    <h3 class="font-black text-4xl text-primary mb-2">3.2M+</h3>
+                    <p class="text-xs text-white/50 uppercase tracking-wide font-bold">Tech freelancers using AI tools</p>
+                </div>
+                <div class="glass-panel p-6 text-center">
+                    <h3 class="font-black text-4xl text-secondary mb-2">47+</h3>
+                    <p class="text-xs text-white/50 uppercase tracking-wide font-bold">Universities teaching AI/ML</p>
+                </div>
+                <div class="glass-panel p-6 text-center">
+                    <h3 class="font-black text-4xl text-accent mb-2">340%</h3>
+                    <p class="text-xs text-white/50 uppercase tracking-wide font-bold">Growth in AI job postings (2024)</p>
+                </div>
+                <div class="glass-panel p-6 text-center">
+                    <h3 class="font-black text-4xl text-green-400 mb-2">Top 10</h3>
+                    <p class="text-xs text-white/50 uppercase tracking-wide font-bold">Global AI talent pool rank</p>
+                </div>
+                <div class="glass-panel p-6 text-center">
+                    <h3 class="font-black text-4xl text-purple-400 mb-2">$2.1B</h3>
+                    <p class="text-xs text-white/50 uppercase tracking-wide font-bold">Projected AI market by 2027</p>
+                </div>
+                <div class="glass-panel p-6 text-center">
+                    <h3 class="font-black text-4xl text-yellow-400 mb-2">1st</h3>
+                    <p class="text-xs text-white/50 uppercase tracking-wide font-bold">S. Asian country with National AI Policy</p>
+                </div>
+            </div>
+            
+            <p class="text-white/60 text-center max-w-3xl mx-auto leading-relaxed text-lg">
+                Pakistan is rapidly emerging as a global AI hub. With a young, tech-savvy population of 220M+ and a growing startup ecosystem, Pakistan is positioned to become South Asia's leading AI nation by 2030.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== PROMPT ENGINEERING GUIDE ===== -->
+    <section id="prompt-guide" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.85)]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 gsap-title">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-6 h-[1px] bg-accent"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-accent font-data">Skill Upgrade</span>
+                    <span class="w-6 h-[1px] bg-accent"></span>
+                </div>
+                <h2 class="font-sans font-black text-4xl md:text-5xl text-white mb-4">Master Prompt <span class="text-gradient">Engineering.</span></h2>
+                <p class="text-white/50 max-w-2xl mx-auto">The skill that makes AI 10x more powerful.</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="ai-tab active filter-btn" onclick="openTab(event, 'prompt-basics')">Basics</button>
+                <button class="ai-tab filter-btn" onclick="openTab(event, 'prompt-templates')">Templates</button>
+                <button class="ai-tab filter-btn" onclick="openTab(event, 'prompt-advanced')">Advanced</button>
+            </div>
+
+            <div class="glass-panel p-8">
+                <div id="prompt-basics" class="ai-tab-content active space-y-4">
+                    <div class="p-4 rounded-xl border-l-4 border-l-primary bg-white/5">
+                        <h4 class="font-bold text-white mb-1">1. Be Specific</h4>
+                        <p class="text-sm text-white/60">Instead of <i>"write email"</i>, say <strong class="text-white">"write a professional follow-up email to a client who hasn't replied in 3 days"</strong>.</p>
+                    </div>
+                    <div class="p-4 rounded-xl border-l-4 border-l-secondary bg-white/5">
+                        <h4 class="font-bold text-white mb-1">2. Set the Role</h4>
+                        <p class="text-sm text-white/60">Tell AI who to be: <strong class="text-white">"You are a senior Python developer. Review this code..."</strong></p>
+                    </div>
+                    <div class="p-4 rounded-xl border-l-4 border-l-accent bg-white/5">
+                        <h4 class="font-bold text-white mb-1">3. Provide Context</h4>
+                        <p class="text-sm text-white/60">Give background: <strong class="text-white">"I am a student in Pakistan. Explain this concept simply..."</strong></p>
+                    </div>
+                    <div class="p-4 rounded-xl border-l-4 border-l-green-400 bg-white/5">
+                        <h4 class="font-bold text-white mb-1">4. Specify Format</h4>
+                        <p class="text-sm text-white/60">Ask for structure: <strong class="text-white">"Give me 5 bullet points"</strong>, or <strong class="text-white">"Respond in table format"</strong>.</p>
+                    </div>
+                    <div class="p-4 rounded-xl border-l-4 border-l-yellow-400 bg-white/5">
+                        <h4 class="font-bold text-white mb-1">5. Iterate</h4>
+                        <p class="text-sm text-white/60">Refine your prompt based on output. AI rewards specific, detailed instructions.</p>
+                    </div>
+                </div>
+                
+                <div id="prompt-templates" class="ai-tab-content hidden space-y-4">
+                    <div class="bg-black/40 border border-white/10 rounded-xl p-4 font-data text-sm text-white/80 select-all">
+                        <strong class="text-primary block mb-1">Universal Task:</strong>
+                        "Act as [ROLE]. I need you to [TASK]. The context is [CONTEXT]. Format the response as [FORMAT]."
+                    </div>
+                    <div class="bg-black/40 border border-white/10 rounded-xl p-4 font-data text-sm text-white/80 select-all">
+                        <strong class="text-secondary block mb-1">Learning:</strong>
+                        "Explain [TOPIC] to me like I am a [LEVEL] student in Pakistan. Use simple examples."
+                    </div>
+                    <div class="bg-black/40 border border-white/10 rounded-xl p-4 font-data text-sm text-white/80 select-all">
+                        <strong class="text-accent block mb-1">Content Creation:</strong>
+                        "Write a [TYPE] about [SUBJECT] that is [TONE] and [LENGTH]. Include [SPECIFIC ELEMENTS]."
+                    </div>
+                    <div class="bg-black/40 border border-white/10 rounded-xl p-4 font-data text-sm text-white/80 select-all">
+                        <strong class="text-green-400 block mb-1">Review/Critique:</strong>
+                        "Review my [CODE/TEXT/PLAN] and suggest improvements. Focus on [SPECIFIC AREA]."
+                    </div>
+                    <div class="bg-black/40 border border-white/10 rounded-xl p-4 font-data text-sm text-white/80 select-all">
+                        <strong class="text-purple-400 block mb-1">Tutorial Gen:</strong>
+                        "Create a step-by-step guide to [TASK] for someone who [BACKGROUND]. Include warnings."
+                    </div>
+                    <div class="bg-black/40 border border-white/10 rounded-xl p-4 font-data text-sm text-white/80 select-all">
+                        <strong class="text-yellow-400 block mb-1">Translation:</strong>
+                        "Translate this to [LANGUAGE] while keeping the professional tone: [TEXT]"
+                    </div>
+                </div>
+                
+                <div id="prompt-advanced" class="ai-tab-content hidden space-y-6">
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Chain of Thought Prompting</h4>
+                        <p class="text-sm text-white/60 mb-2">Appending <strong class="text-white">"Let's think step by step"</strong> forces the LLM to break down its reasoning before answering, drastically reducing math and logic errors.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">Few-Shot Prompting</h4>
+                        <p class="text-sm text-white/60 mb-2">Giving the AI 2-3 examples of the input-output pair you want before giving it the real task, acting as temporary training.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-2">System Prompts</h4>
+                        <p class="text-sm text-white/60 mb-2">The overarching instructions given to AI in playground environments. E.g., "You operate only in JSON format. Never output conversational text."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AI QUIZ ===== -->
+    <section id="ai-quiz" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(15,20,35,0.7)]">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12 gsap-title">
+                <div class="inline-flex items-center gap-2 mb-4">
+                    <span class="w-6 h-[1px] bg-secondary"></span>
+                    <span class="text-xs font-bold tracking-widest uppercase text-secondary font-data">Challenge</span>
+                    <span class="w-6 h-[1px] bg-secondary"></span>
+                </div>
+                <h2 class="font-sans font-black text-4xl md:text-5xl text-white mb-4">Test Your AI <span class="text-gradient">Knowledge.</span></h2>
+                <p class="text-white/50">5 questions. How many can you answer?</p>
+            </div>
+            
+            <div class="glass-panel p-8" id="quiz-container">
+                <!-- Quiz dynamically injected by JS -->
+            </div>
+        </div>
+    </section>
+
     <!-- ===== AI TOOLS GRID ===== -->
     <section id="tools" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.6)]">
         <div class="max-w-7xl mx-auto">
@@ -2234,6 +2386,48 @@
                     <div
                         class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent transition-colors">
                         <i data-lucide="play" class="w-3 h-3 text-white"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ===== FEATURED VIDEO ===== -->
+    <section id="featured-video" class="py-24 px-6 relative z-10 border-t border-white/5 bg-[rgba(8,11,22,0.8)]">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12 gsap-title">
+                <h2 class="font-sans font-black text-4xl md:text-5xl text-white mb-4">Watch: AI <span class="text-gradient">Explained.</span></h2>
+                <p class="text-white/50 text-lg">The best AI overview video for Pakistani learners</p>
+            </div>
+            
+            <div class="glass-panel p-2 md:p-6 mb-8 shadow-[0_0_50px_rgba(124,58,237,0.15)]">
+                <div class="relative w-full overflow-hidden rounded-xl aspect-video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ad79nYk2keg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full rounded-xl"></iframe>
+                </div>
+            </div>
+            
+            <h3 class="text-white font-bold text-xl mb-4 ml-2">Watch Next</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="glass-panel p-5 flex items-center justify-between group hover:border-primary/50 cursor-pointer transition-all">
+                    <div>
+                        <span class="text-[10px] text-white/40 uppercase font-data font-bold tracking-widest">Tutorial</span>
+                        <h4 class="text-white font-bold text-sm mt-1 group-hover:text-primary transition-colors">ChatGPT Full Tutorial 2026</h4>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary transition-colors"><i data-lucide="play" class="w-3 h-3 text-white"></i></div>
+                </div>
+                <div class="glass-panel p-5 flex items-center justify-between group hover:border-secondary/50 cursor-pointer transition-all">
+                    <div>
+                        <span class="text-[10px] text-white/40 uppercase font-data font-bold tracking-widest">Masterclass</span>
+                        <h4 class="text-white font-bold text-sm mt-1 group-hover:text-secondary transition-colors">Midjourney Masterclass</h4>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-secondary transition-colors"><i data-lucide="play" class="w-3 h-3 text-white"></i></div>
+                </div>
+                <div class="glass-panel p-5 flex items-center justify-between group hover:border-accent/50 cursor-pointer transition-all">
+                    <div>
+                        <span class="text-[10px] text-white/40 uppercase font-data font-bold tracking-widest">Course</span>
+                        <h4 class="text-white font-bold text-sm mt-1 group-hover:text-accent transition-colors">Build AI Apps with Python</h4>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent transition-colors"><i data-lucide="play" class="w-3 h-3 text-white"></i></div>
                 </div>
             </div>
         </div>
@@ -2992,7 +3186,9 @@
     </section>
 
     </main>
-    <!-- Footer -->
+    </main>
+</main>
+<!-- Footer -->
     <footer role="contentinfo"
         class="bg-[rgba(8,11,22,1)] text-white rounded-t-[4rem] px-8 pt-20 pb-10 relative overflow-hidden border-t border-white/5 z-10">
         <div
